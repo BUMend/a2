@@ -145,8 +145,7 @@ a {
 
 }
 .server-msg {
-	padding-bottom: 5rem;
-	overflow: hidden;	
+	padding-bottom: 5rem;	
 }
 .t4u {
 	font-family: song;
@@ -186,7 +185,12 @@ a {
 
 /*server- tour 模块*/
 .server-tour {
-	background: white;
+	background: url(../img/bg-t.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+.food {
+	background-color: #fff;
 }
 .food-arrow {
 	position: relative;
@@ -194,13 +198,11 @@ a {
 	height: 0;
 	border: 50px solid transparent;
 	border-bottom: 49px solid #ffd200;
-	
-
 }
 .food-content {
 	overflow: hidden;
 	padding: 0rem 2rem 2rem 10rem;
-	background: white;
+	background: #fff;
 
 }
 .food img {
@@ -220,9 +222,7 @@ a {
 	color: white;
 	font-size: 2rem;
 	text-align: left;
-
 }
-
 .food-introduction {
 	display: none;
 }
@@ -275,7 +275,11 @@ a {
 	width: 100%;
 }
 /*server- stay 模块*/
-
+.server-stay {
+	background: url(../img/traff-bg.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
 
 
 
