@@ -47,4 +47,41 @@ $(document).ready(function() {
 			serverStay.show();
 		}
 	})
+	var control = 0;
+	$(window).scroll(function(){
+		top = $(document).height();
+		trigger = ($(window).scrollTop()<($('.feature h1').offset().top-$(window).height()))||($(window).scrollTop()>($('.feature h1').offset().top+$('.feature h1').outerHeight()))
+		if(!trigger&&control == 0){
+			$('.special img').animate({
+				top: '0'		
+			},1000);
+			$('.special img').css({
+				transform : "rotateY(10deg)",
+				opacity : 1,
+				transition : "transform 2s,opacity 1s"
+			})			
+			jQuery.fn.shake = function(intShakes /*Amount of shakes*/, intDistance /*Shake distance*/, intDuration /*Time duration*/) {
+			    this.each(function() {
+			        var jqNode = $(this);
+			        jqNode.css({position: 'relative'});
+			        for (var x=1; x<=intShakes; x++) {
+			            jqNode.animate({ top: (intDistance * -1) },(((intDuration / intShakes) / 4)))
+			            //.animate({ top: intDistance },((intDuration/intShakes)/2))
+			            .animate({ top: 0 },(((intDuration/intShakes)/4)));
+			        }
+			    });
+			    return this;
+			}	
+			$('.special img').shake(1,12,1000);
+			control = 1;
+		}
+		if($(window).scrollTop()<1980){
+			$('.special img').css({
+				opacity : 0,
+				top : "-170px",
+				transform : "rotateY(80deg)"
+			})				
+			control = 0;
+		}
+	})
 })

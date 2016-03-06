@@ -131,6 +131,7 @@ a {
 
 .server-fun {
 	text-align: center;
+	display: none;
 }
 .fun-introduction {
 	background: white;
@@ -175,6 +176,23 @@ a {
 }
 .feature p {
 	padding: 3rem;
+}
+.special {
+	margin-top: 2rem;
+	height: 12rem;
+}
+.special img {
+	width: 20%;
+	position: relative;
+	top: -170px;
+	opacity: 0;
+	transform: rotateY(80deg);
+	-webkit-transform: rotateY(80deg);	 /*Safari 和 Chrome */ 
+	-moz-transform: rotateY(80deg);	/* Firefox */
+}
+.special span {
+	display: block;
+	margin-top: .5rem;
 }
 /*
 注意了：
