@@ -154,17 +154,12 @@ a {
 	margin-top: 25rem;
 	position: relative;
 }
-.server .triangle {
-	top: 0;
-	-webkit-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
 /*server- tour 模块*/
 
 
 /*server- traffic 模块*/
 .server-traffic {
+	display: none;
 	background: url(../img/traff-bg.jpg) no-repeat;
 	background-attachment: fixed;
 }
@@ -172,6 +167,7 @@ a {
 
 /*server- fun 模块*/
 .server-fun {
+	display: none;
 	text-align: center;
 	background: url(../img/fun-bg.jpg) no-repeat;
 	background-attachment: fixed;
@@ -203,7 +199,6 @@ a {
 	width: 110%;
 	height: 50rem;
 	overflow-y: auto;
-	scrollbar-base-color: transparent;
 }
 .fun-photo img {
 	width: 100%;

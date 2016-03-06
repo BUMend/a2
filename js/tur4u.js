@@ -15,6 +15,7 @@ $(document).ready(function() {
 			serverFun.hide();
 			serverStay.hide();
 			serverTour.show();
+
 		}
 		if(name === "img/c2.png"){
 			$this.attr("src","img/2.png");
@@ -46,5 +47,7 @@ $(document).ready(function() {
 			serverFun.hide();
 			serverStay.show();
 		}
-	})
+
+	});
+	
 })
