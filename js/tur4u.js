@@ -86,14 +86,14 @@ $(document).ready(function() {
 			control = 0;
 		}
 	})
-	$('.fun-photo ul li').mouseover(function(){
+	$('.fun-photo ul li,.left-2,.left-3,.right-3,.right-4,.left-5,.right-5').mouseover(function(){
 		$(this).css({
 			zIdex : 2,
 			transform : 'scale(1.2,1.2)',
 			transition : 'transform 1s'	
 		});
 	})
-	$('.fun-photo ul li').mouseout(function(){
+	$('.fun-photo ul li,.left-2,.left-3,.right-3,.right-4,.left-5,.right-5').mouseout(function(){
 		$(this).css({
 			zIdex : 1,
 			transform : 'scale(1,1)',
