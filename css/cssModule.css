@@ -44,6 +44,46 @@ a {
 	display: block;
 	margin-top: .5rem;
 }
+
+
+/*视差滚动条*/
+.parallax {
+	display: block;
+	color: #fff;
+	font-size: 3rem;
+	font-weight: 900;
+	line-height: 8rem;
+	text-align: center;
+	background: #000;
+	opacity: 0.7;
+	filter: alpha(opacity = 70);
+}
+.parallax:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.parallax-title {
+	display: block;
+	font-size: 1rem;
+	margin-bottom: -50px;
+}
+.parallax hr {
+	margin: 0 auto;
+	width: 15%;
+	height: 3px;
+	border: none;
+	background-color: #f2303e;
+}
+.parallax button {
+	width: 20%;
+	border: 1px solid #f2303e;
+	border-radius: 5rem;
+	line-height: 3rem;
+	font-size: 2rem;
+	color: #fff;
+	background: #f2303e;
+}
+
 /*navbar 导航栏*/
 .navbar {
 	margin-bottom: 0;
@@ -124,16 +164,20 @@ a {
 
 
 /*server- traffic 模块*/
-
+.server-traffic {
+	background: url(../img/traff-bg.jpg) no-repeat;
+	background-attachment: fixed;
+}
 
 
 /*server- fun 模块*/
-
 .server-fun {
 	text-align: center;
+	background: url(../img/fun-bg.jpg) no-repeat;
+	background-attachment: fixed;
 }
 .fun-introduction {
-	background: white;
+	background: #fff;
 }
 .fun-text {
 	padding-top: 4rem;
@@ -152,16 +196,24 @@ a {
 	margin: 0;
 	padding-bottom: 1rem;
 }
-.fun-show {
-	margin: 0 auto;
+.fun-photo > div {
+	overflow: hidden;
 }
-.carousel-inner .fun-show img {
-	width: 500px;
-	height: 280px;
+.fun-photo ul {
+	width: 110%;
+	height: 50rem;
+	overflow-y: auto;
+	scrollbar-base-color: transparent;
 }
-
-
+.fun-photo img {
+	width: 100%;
+}
 /*server- stay 模块*/
+
+
+
+
+
 
 /*feature 旅行特色板块*/
 .feature {
@@ -176,45 +228,15 @@ a {
 .feature p {
 	padding: 3rem;
 }
-/*
-注意了：
-特色的下面标签是用响应式来调整的 css query
-还没做
-*/
-
 
 /*aboutus 关于我们板块*/
 .aboutus {
 	background: url(../img/about-bg.jpg) no-repeat 0% 15%;
 	background-attachment: fixed;
 }
-.aboutus a {
-	display: block;
-	color: #fff;
-	font-size: 3rem;
-	font-weight: 900;
-	line-height: 8rem;
-	text-align: center;
-	background: #000;
-	opacity: 0.7;
-	filter: alpha(opacity = 70);
-}
-.about-title {
-	margin-bottom: -50px;
-}
-.aboutus a:hover {
-	text-decoration: none;
-}
 .aboutus span {
 	display: block;
 	font-size: 1rem;
-}
-.aboutus hr {
-	margin: 0 auto;
-	width: 15%;
-	height: 3px;
-	border: none;
-	background-color: #f2303e;
 }
 .aboutus p {
 	padding: 15rem;
@@ -225,11 +247,6 @@ a {
 .highlight {
 	color: #f2303e;
 }
-
-
-
-
-
 
 /*partner 合作伙伴板块*/
 .partner h1 {
