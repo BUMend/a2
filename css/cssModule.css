@@ -392,3 +392,11 @@ a {
 .contact span {
 	display: block;
 } 
+
+
+	/*图片遮罩*/
+.cover {
+	position: relative;
+	opacity: 0.5;
+	background-color: black;
+}
