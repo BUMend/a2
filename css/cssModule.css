@@ -17,15 +17,6 @@ ul {
 a {
 	text-decoration: none;
 }
-/*@font-face
-{
-    font-family: myFirstFont;
-    src: url("/fonts/buildFontFatory.otf");
-}
-div
-{
-    font-family:myFirstFont;
-}*/
 .container {
 	margin: 0;
 	padding: 0;
@@ -135,29 +126,6 @@ div
 	transform: rotate(180deg);
 }
 /*server- tour 模块*/
-.server-tour {
-	text-align: center;
-}
-.tour-introduction {
-	background: white;
-}
-.tour-text {
-	padding-top: 4rem;
-}
-.tour-text img {
-	width: 10%;
-	margin: 1rem;
-}
-p.introduction-title {
-	font-family: song;
-}
-p.introduction-title ,p.introduction-content {
-	color: black;
-}
-p.last-sentence {
-	margin: 0;
-	padding-bottom: 1rem;
-}
 
 
 /*server- traffic 模块*/
@@ -166,7 +134,36 @@ p.last-sentence {
 
 /*server- fun 模块*/
 
-
+.server-fun {
+	text-align: center;
+}
+.fun-introduction {
+	background: white;
+}
+.fun-text {
+	padding-top: 4rem;
+}
+.fun-text img {
+	width: 10%;
+	margin: 1rem;
+}
+.introduction-title {
+	font-family: song;
+}
+.introduction-title ,.introduction-content {
+	color: black;
+}
+.last-sentence {
+	margin: 0;
+	padding-bottom: 1rem;
+}
+.fun-show {
+	margin: 0 auto;
+}
+.carousel-inner .fun-show img {
+	width: 500px;
+	height: 280px;
+}
 
 
 /*server- stay 模块*/
