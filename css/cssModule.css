@@ -238,11 +238,13 @@ a {
 .server-fun {
 	display: none;
 	text-align: center;
-}
-..fun-introduction {
-	background: #fff;
 	background: url(../img/fun-bg.jpg) no-repeat;
 	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+.fun-introduction {
+	background: #fff;
+	
 }
 .fun-text {
 	padding-top: 4rem;
