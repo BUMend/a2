@@ -1,5 +1,6 @@
 /*reset  */
 html, body, h1, h4, ul {
+	min-width: 768px;
 	margin: 0;
 	padding: 0;
 	font-family: 'Microsoft Yahei', Helvetica, Arial, sans-serif; 
@@ -165,10 +166,88 @@ a {
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 }
-/*server- food 模块*/
-.server-food {
+/*server- football 模块*/
+.server-football {
+	display: none;
 }
+#ft-sl .lt {
+	padding: 4rem 4rem 0rem 0rem;
+	background: url(../img/qiu.png) 24% 88% #fc3e2c no-repeat;
+	background-size: 56%;
+}
+#ft-sr .rtl, #ft-sr .rtr {
+	width: 50%;
+}
+/*server- food 模块*/
+
+.server-food {
+	display: none;
+	float: left;
+}
+#fo-sl .lt {
+	padding: 4rem 4rem 0rem 0rem;
+	background: url(../img/bg-lt.png) 10% #fc3e2c no-repeat;
+	background-size: 40%;
+}
+/*server- traffic 模块*/
+.server-traffic {
+	display: none;	
+	float: left;
+	width: 100%;
+}
+#tf-sl .lt {
+	padding: 4rem 4rem 0rem 0rem;
+	background: url(../img/bg-tf.png) 10% 86% #fc3e2c no-repeat;
+	background-size: 40%;
+}
+
+/*server- fun 模块*/
+.server-fun {
+/*	display: none;*/
+}
+#fun-sl .lt {
+	text-align: left;
+	padding: 3rem 0rem 0rem 3.2rem;
+	background: url(../img/bg-fun.png) 82% 86% #fc3e2c no-repeat;
+	background-size: 40%;	
+}
+/*server- stay 模块*/
+.server-stay {
+	display: none;
+}
+#st-sl, #st-sr,#st-ct, .st-tl, .st-tr, .st-bl, .st-br {
+	float: left;
+} 
+
+#st-sl {
+	width: 34.97%;
+}
+#st-ct {
+	width: 34.97%;
+}
+#st-sr {
+	width: 30.06%;
+}
+.st-tl,.st-tr,.st-bl, .st-br {
+	width: 100%;
+}
+.st-tl,.st-tr {
+	height: 54.72%;
+}
+.st-bl, .st-br {
+	height: 45.28%;
+}
+.st-tr {
+	background: url(../img/bg-lt.png) 10% #fc3e2c no-repeat;
+	background-size: 40%;
+}
+.server-stay img {
+	width: 100%;
+	height: 100%;
+}
+/*模块*/
 .food{
+	float: left;
 	padding: 1% 15%;
 }
 .food-arrow {
@@ -178,94 +257,85 @@ a {
 	border: 50px solid transparent;
 	border-bottom: 49px solid #ffd200;
 }
-.food-content {
-	overflow: hidden;
-	padding: 0rem 2rem 2rem 10rem;
-}
+
 .food img {
 	width: 100%;
 	height: 100%;	
 }
 .show-left {
-    float: left;
-    width: 26.9%;
+	float: left;
+	width: 26.9%;
+	height: 100%;
 }
 .lt {
-	padding:1rem; 
+	height: 50%;
 	text-align: right;
-	background: url(../img/bg-lt.png) 10% #fc3e2c no-repeat;
-	background-size: 40% ;
+	line-height: 1.6;
+
 }
 .lt span {
 	display: block;
-	font-size: 1.8rem;
+	font-size: 2.4rem;
+	font-weight: 100;
+}
+
+/*屏幕*/
+@media all and (max-width: 1440px) {
+	#ft-sl .lt ,#fo-sl .lt ,#tf-lt .lt ,#fun-sl .lt ,.lt {
+		padding: 3rem 3rem 0rem 0rem; 
+	}
+	#fun-sl .lt {
+		padding: 2rem 0rem 0rem 3rem;
+	}
+	#ft-sl .lt span ,#fo-sl .lt span ,#tf-lt .lt span ,#fun-sl .lt span , .lt span {
+		font-size: 2.0rem;
+	}
+}
+/* 小屏幕 */
+@media all and (max-width: 1024px) {
+	#ft-sl .lt ,#fo-sl .lt ,#tf-lt .lt ,.lt  {
+		padding: 2rem 2rem 0rem 0rem; 
+	}
+	#ft-sl .lt span ,#fo-sl .lt span ,#tf-lt .lt span ,#fun-sl .lt span , .lt span {
+		font-size: 1.6rem;
+	}
+	#fun-sl .lt {
+		padding:  2rem 0rem 0rem 2rem;
+	}
+}
+/* 平板 */
+@media all and (max-width: 768px) {
+	#ft-sl .lt ,#fo-sl .lt ,#tf-lt .lt ,#fun-sl .lt ,.lt  {
+		padding: 2rem .6rem 0rem 0rem; 
+		line-height: 1.3;
+	}
+	#ft-sl .lt span ,#fo-sl .lt span ,#tf-lt .lt span ,#fun-sl .lt span , .lt span {
+		font-size: 1.5rem;
+	}
+	#fun-sl .lt {
+		padding:  1rem 0rem 0rem .6rem;
+	}
+}
+.lb {
+	height: 50%;
 }
 .show-right {
     float: left;
     width: 73.1%;
+    height: 100%;
+}
+.rt {
+    height: 39.68%;	
 }
 .rtl {
     float: left;
     width: 32.95%;
+    height: 60.32%;
 }
 .rtr {
     float: left;
     width: 67.05%;
-}
-/*server- traffic 模块*/
-.server-traffic {
-	display: none;
-	background: url(../img/traff-bg.jpg) no-repeat;
-	background-attachment: fixed;
-}
-
-
-/*server- fun 模块*/
-.server-fun {
-	display: none;
-	text-align: center;
-	background: url(../img/fun-bg.jpg) no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
-}
-.fun-introduction {
-	background: #fff;
-	
-}
-.fun-text {
-	padding-top: 4rem;
-}
-.fun-text img {
-	width: 10%;
-	margin: 1rem;
-}
-.introduction-title {
-	font-family: song;
-}
-.introduction-title ,.introduction-content {
-	color: black;
-}
-.last-sentence {
-	margin: 0;
-	padding-bottom: 1rem;
-}
-.fun-photo > div {
-	overflow: hidden;
-}
-.fun-photo ul {
-	width: 110%;
-	height: 50rem;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
-.fun-photo img {
-	width: 100%;
-}
-/*server- stay 模块*/
-.server-stay {
-	background: url(../img/traff-bg.jpg) no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
+    height: 60.32%;
 }
 /*team 团队介绍板块*/
 .team {
