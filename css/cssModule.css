@@ -191,7 +191,7 @@ a {
 .lt {
 	padding:1rem; 
 	text-align: right;
-	background: url(../img/foo3.jpg) 10% #fc3e2c no-repeat;
+	background: url(../img/bg-lt.png) 10% #fc3e2c no-repeat;
 	background-size: 40% ;
 }
 .lt span {
