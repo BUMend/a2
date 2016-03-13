@@ -248,8 +248,8 @@ a {
 /*team 团队介绍板块*/
 .team {
 	width: 100%;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
+	padding-top: 25rem;
+	padding-bottom: 25rem;
 }
 .team-msg {
 	float: left;
@@ -300,7 +300,8 @@ a {
 .feature a {
 	display: block;
 	margin: 0 auto;
-	width: 13rem;
+	width: 25%;
+	line-height: 1.5;
 	border: 1px solid #fff;
 	border-radius: 20px;
 	color: #fff;
