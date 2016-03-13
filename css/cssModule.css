@@ -168,9 +168,8 @@ a {
 /*server- food 模块*/
 .server-food {
 }
-.food div {
-	padding: 0;
-	background: #fc3e2c;
+.food{
+	padding: 1% 15%;
 }
 .food-arrow {
 	position: relative;
@@ -188,7 +187,30 @@ a {
 	height: 100%;	
 }
 .show-left {
-
+    float: left;
+    width: 26.9%;
+}
+.lt {
+	padding:1rem; 
+	text-align: right;
+	background: url(../img/bg-lt.png) 10% #fc3e2c no-repeat;
+	background-size: 40% ;
+}
+.lt span {
+	display: block;
+	font-size: 1.8rem;
+}
+.show-right {
+    float: left;
+    width: 73.1%;
+}
+.rtl {
+    float: left;
+    width: 32.95%;
+}
+.rtr {
+    float: left;
+    width: 67.05%;
 }
 /*server- traffic 模块*/
 .server-traffic {
