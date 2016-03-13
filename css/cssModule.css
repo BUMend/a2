@@ -32,65 +32,31 @@ a {
 	height: 12rem;
 }
 .card img {
-	width: 43%;
-}
-.feature .card img {
-	width: 50%;
+	width: 30%;
 }
 .card span {
 	display: block;
-	margin-top: .5rem;
+	margin-top: 3rem;
 	font-size: 1.5rem;
 }
-
-
-/*视差滚动条*/
-.parallax {
-	display: block;
-	color: #fff;
-	font-size: 3rem;
-	font-weight: 900;
-	line-height: 8rem;
-	text-align: center;
-	background: #000;
-	opacity: 0.7;
-	filter: alpha(opacity = 70);
-}
-.parallax:hover {
-	color: #fff;
-	text-decoration: none;
-}
-.parallax-title {
-	display: block;
-	font-size: 1rem;
-	margin-bottom: -50px;
-}
-.parallax hr {
-	margin: 0 auto;
-	width: 15%;
-	height: 3px;
-	border: none;
-	background-color: #f2303e;
-}
-.parallax button {
-	width: 20%;
-	border: 1px solid #f2303e;
-	border-radius: 5rem;
-	line-height: 3rem;
-	font-size: 2rem;
-	color: #fff;
-	background: #f2303e;
-}
-
 /*navbar 导航栏*/
 .navbar {
 	margin-bottom: 0;
-	background: #1b1b1b;
+	font-size: 1.5rem;
+	background: transparent;
 	border: none;
+}
+.navbar-nav {
+	float: right;
+	margin-right: 10rem;
+}
+.navbar-nav li {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	border-bottom: 2px solid transparent;
 }
 .navbar .navbar-brand {
 	color: #fff;
-	font-family: SimSun;
 } 
 .navbar-default .navbar-toggle {
 	border: none;
@@ -101,6 +67,11 @@ a {
 .navbar-default .navbar-toggle .icon-bar {
 	background: #f2303e;
 }
+.scroll {
+	background: #222;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
 /*header 标题页*/
 .header {
 	position: relative;
@@ -110,6 +81,7 @@ a {
 	font-weight: 900;
 	background: url(../img/bg.jpg) no-repeat 50% 50%;
 	background-size: 100% 100%;
+	white-space: nowrap;
 }
 .header h1 {
 	margin: 5rem auto;
@@ -134,8 +106,6 @@ a {
 	padding-bottom: 3rem;
 	color: white;
 	text-align: center;
-	background: url(../img/footTour-bg.jpg) no-repeat 0% 50%;
-	background-size: 100% 100%; 
 }
 .server-msg {
 	position: relative;
@@ -214,19 +184,11 @@ a {
 }
 /*server- traffic 模块*/
 .server-traffic {
-	display: none;
-	background: url(../img/traff-bg.jpg) no-repeat;
-	background-attachment: fixed;
 }
 
 
 /*server- fun 模块*/
 .server-fun {
-	display: none;
-	text-align: center;
-	background: url(../img/fun-bg.jpg) no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
 }
 .fun-introduction {
 	background: #fff;
@@ -263,15 +225,12 @@ a {
 }
 /*server- stay 模块*/
 .server-stay {
-	background: url(../img/traff-bg.jpg) no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
 }
 /*team 团队介绍板块*/
 .team {
 	width: 100%;
-	padding-top: 25rem;
-	padding-bottom: 25rem;
+	padding-top: 15rem;
+	padding-bottom: 15rem;
 }
 .team-msg {
 	float: left;
@@ -292,16 +251,33 @@ a {
 	width: 80%;
 }
 .team-word {
-	padding-top: 3rem;
+	height: 100%;
+	font-size: 1.5rem;
+    	padding-top: 7rem;
 	background: url(../img/team-til.png) no-repeat 90% 0%;
 	background-size: 10%;
 }
+@media screen and (max-width: 1980px) {
+	.team-word {
+		font-size: 2rem;
+	}
+}
+@media screen and (max-width: 1240px) {
+	.team-word {
+		font-size: 1.5rem;
+	}
+}
+.team-word p {
+	margin-top: 2.5rem;
+}
+.team-word p ~ p {
+	margin: 0;
+}
 .team a {
-	position: absolute;
-	right: 35%;
-	bottom: -15%;
-	padding: .5rem 0;
-	width: 25%;
+	display: block;
+	margin-top: 1rem;
+	width: 40%;
+	line-height: 3rem;
 	color: #fff;
 	font-weight: 900;
 	font-size: 1rem;
@@ -311,6 +287,7 @@ a {
 }
 /*feature 旅行特色板块*/
 .feature {
+	height: 30rem;
 	color: #fff;
 	text-align: center;
 	background-color: #f2303e;
@@ -337,27 +314,6 @@ a {
 .feature span {
 	display: block;
 }
-.special {
-	height: 12rem;
-}
-.special img {
-	width: 100%;
-	position: relative;
-	top: -170px;
-	opacity: 0;
-	transform: rotateY(80deg);
-	-webkit-transform: rotateY(80deg);	 /*Safari 和 Chrome */ 
-	-moz-transform: rotateY(80deg);	/* Firefox */
-}
-.special span {
-	display: block;
-	margin-top: .5rem;
-}
-/*
-注意了：
-特色的下面标签是用响应式来调整的 css query
-还没做
-*/
 /*contact 联系方式*/
 .contact {
 	color: #fff;
@@ -376,25 +332,66 @@ a {
 }
 .contact p {
 	margin: 0;
-	padding: 4rem 0 4rem 8rem;
+	padding: 4rem 0 4rem 12rem;
 	border-left: 5px solid #fc3e4c;
 	text-align: left;
 }
 .contact-phone {
-	background: url(../img/con-1.png) no-repeat 5% 50%;
-	background-size: 15% 50%;
+	background: url(../img/con-1.png) no-repeat 10% 50%;
+	background-size: 10% 50%;
 }
 .contact-website {
-	background: url(../img/con-2.png) no-repeat 5% 50%;
-	background-size: 15% 50%;
+	background: url(../img/con-2.png) no-repeat 10% 50%;
+	background-size: 10% 50%;
 }
 .contact-address {
-	background: url(../img/con-3.png) no-repeat 5% 20%;
-	background-size: 15% 25%;
+	background: url(../img/con-3.png) no-repeat 10% 20%;
+	background-size: 10% 25%;
 }
-/*图片遮罩*/
-.cover {
-	position: relative;
-	opacity: 0.5;
-	background-color: black;
+.contact-address span {
+	display: block;
+}
+@media screen and (max-width: 1480px) {
+	.contact-phone {
+		background-size: 18% 50%;
+	}
+	.contact-website {
+		background-size: 18% 50%;
+	}
+	.contact-address {
+		background-size: 18% 25%;
+	}
+}
+@media screen and (max-width: 1240px) {
+	.contact-phone {
+		background-size: 18% 50%;
+	}
+	.contact-website {
+		background-size: 18% 50%;
+	}
+	.contact-address {
+		background-size: 18% 30%;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.contact-phone {
+		background-size: 18% 50%;
+	}
+	.contact-website {
+		background-size: 18% 50%;
+	}
+	.contact-address {
+		background-size: 18% 25%;
+	}
+}
+@media screen and (max-width: 960px) {
+	.contact-phone {
+		background-size: 15% 50%;
+	}
+	.contact-website {
+		background-size: 15% 50%;
+	}
+	.contact-address {
+		background-size: 15% 25%;
+	}
 }
