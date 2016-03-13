@@ -1,58 +1,20 @@
 $(document).ready(function() {
-	$('.card img').click(function(){
-		console.log(this);
+	$('.server-msg a').click(function(){
 	      var $this = $(this);
-		var name = $this.attr("src");
-		console.log(name);
-		var serverTour = $('.server-tour');
+		var serverFootball = $('.server-football');
+		var serverFood = $('.server-food');
 		var serverTraffic = $('.server-traffic');
 		var serverFun = $('.server-fun');
 		var serverStay = $('.server-stay');
-		if(name === "img/1.png"){
-			$this.attr("src","img/c1.png");
-			$this.parent().next().children().attr("src","img/2.png");
-			$this.parent().next().next().children().attr("src","img/3.png");
-			$this.parent().next().next().next().children().attr("src","img/4.png");
-			serverTraffic.hide();
-			serverFun.hide();
-			serverStay.hide();
-			serverTour.show();
-		}
-		if(name === "img/2.png"){
-			$this.attr("src","img/c2.png");
-			$this.parent().prev().children().attr("src","img/1.png");
-			$this.parent().next().children().attr("src","img/3.png");
-			$this.parent().next().next().children().attr("src","img/4.png");
-			serverTour.hide();
-			serverFun.hide();
-			serverStay.hide();
-			serverTraffic.show();
-		}
-		if(name === "img/3.png"){
-			$this.attr("src","img/c3.png");
-			$this.parent().prev().prev().children().attr("src","img/1.png");
-			$this.parent().prev().children().attr("src","img/2.png");
-			$this.parent().next().children().attr("src","img/4.png");
-			serverTour.hide();
-			serverTraffic.hide();
-			serverStay.hide();
-			serverFun.show();
-		}
-		if(name === "img/4.png"){
-			$this.attr("src","img/c4.png");
-			$this.parent().prev().children().attr("src","img/3.png");
-			$this.parent().prev().prev().children().attr("src","img/2.png");
-			$this.parent().prev().prev().prev().children().attr("src","img/1.png");
-			serverTour.hide();
-			serverTraffic.hide();
-			serverFun.hide();
-			serverStay.show();
-		}
+		var server = $('.server-content div');
+		console.log(server);
+		server.hide();
+		$this
 	})
 	var control = 0;
 	$(window).scroll(function(){
 		height = $(window).height();
-		trigger = document.getElementById('trigger').getBoundingClientRect().top < ($(window).height()*2/3);
+		trigger = document.getElementById('trigger').getBoundingClientRect().top < (height*2/3);
 		if(trigger&&control == 0){
 			$('.special img').animate({
 				top: '0'		
@@ -77,7 +39,7 @@ $(document).ready(function() {
 			$('.special img').shake(1,12,1000);
 			control = 1;
 		}
-		if(document.getElementById('trigger').getBoundingClientRect().top>=height){
+		if(document.getElementById('trigger').getBoundingClientRect().top>=1.2*height){
 			$('.special img').css({
 				opacity : 0,
 				top : "-170px",

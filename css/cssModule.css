@@ -148,6 +148,7 @@ a {
 	line-height: 3rem;
 	color: #b2b2b2;
 	background: #fff2eb;
+	text-decoration: none;
 }
 .server-msg a:hover {
 	text-decoration: none;
