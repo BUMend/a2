@@ -1,14 +1,9 @@
 $(document).ready(function() {
 	$('.server-msg a').click(function(){
 	      var $this = $(this);
-		// var serverFootball = $('.server-football');
-		// var serverFood = $('.server-food');
-		// var serverTraffic = $('.server-traffic');
-		// var serverFun = $('.server-fun');
-		// var serverStay = $('.server-stay');
 		var server = $('.server-tab');
 		server.hide();
-		var name = ".server-"+$this.attr("class").toString();
+		var name = ".ser"+$this.attr("class").toString();
 		$(name).show();
 	})
 	var control = 0;
