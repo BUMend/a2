@@ -16,70 +16,77 @@ window.onload = function() {
             $(window).on('resize',function() {
                 ChangePhoto();
             });
-	$('.server-msg a').on("click",function(){
-		// var $this = $(this);
-		// var server = $('.server-tab');
-		// var tag = $('.server-msg')[0].getElementsByTagName("a");
-		// server.hide();
-		// var name = ".ser"+$this.attr("class").toString();
-		// $(name).show();
-		// ChangePhoto();
-		// if(name === ".server-football"){
-  //           			$('.triangle').css("left","23.48%");
-	 //            		for(var i = 0, len = tag.length; i < len; i++){
-		// 		tag[i].classList.remove("fb-active");
-		//       		tag[i].classList.remove("fn-active");
-		//       		tag[i].classList.remove("tf-active");
-		//       		tag[i].classList.remove("st-active");
-		// 	}
-		// 	this.classList.add("fo-active");
-  //           		}
-  //           		if(name === ".server-food" ){
-  //           			$('.triangle').css("left","36.38%");
-  //           			for(var i = 0, len = tag.length; i < len; i++){
-		// 		tag[i].classList.remove("fb-active");
-		//       		tag[i].classList.remove("fn-active");
-		//       		tag[i].classList.remove("tf-active");
-		//       		tag[i].classList.remove("st-active");
+            $('#tab-list').click(function (e) { 
 
-		// 	}
-		// 	this.classList.add("fo-active");
-		// }
-		// if(name === ".server-fun"){
-		//             $('.triangle').css("left","49.28%");
-		//             	for(var i = 0, len = tag.length; i < len; i++){
-		// 		tag[i].classList.remove("fb-active");
-		//       		tag[i].classList.remove("fo-active");
-		//       		tag[i].classList.remove("tf-active");
-		//       		tag[i].classList.remove("st-active");
+	  ChangePhoto();
+             }) ;
+		
+            $("li.active").find("")
 
-		// 	}
-		// 	this.classList.add("fn-active");
-		// }
-		//  if(name===".server-traffic"){	
-  //           			$('.triangle').css("left","62.18%");
-  //           			for(var i = 0, len = tag.length; i < len; i++){
-		// 		tag[i].classList.remove("fb-active");
-		//       		tag[i].classList.remove("fo-active");
-		//       		tag[i].classList.remove("fn-active");
-		//       		tag[i].classList.remove("tf-active");
+// 	$('.server-msg a').on("click",function(){
+// 		// var $this = $(this);
+// 		// var server = $('.server-tab');
+// 		// var tag = $('.server-msg')[0].getElementsByTagName("a");
+// 		// server.hide();
+// 		// var name = ".ser"+$this.attr("class").toString();
+// 		// $(name).show();
+// 		// ChangePhoto();
+// 		// if(name === ".server-football"){
+//   //           			$('.triangle').css("left","23.48%");
+// 	 //            		for(var i = 0, len = tag.length; i < len; i++){
+// 		// 		tag[i].classList.remove("fb-active");
+// 		//       		tag[i].classList.remove("fn-active");
+// 		//       		tag[i].classList.remove("tf-active");
+// 		//       		tag[i].classList.remove("st-active");
+// 		// 	}
+// 		// 	this.classList.add("fo-active");
+//   //           		}
+//   //           		if(name === ".server-food" ){
+//   //           			$('.triangle').css("left","36.38%");
+//   //           			for(var i = 0, len = tag.length; i < len; i++){
+// 		// 		tag[i].classList.remove("fb-active");
+// 		//       		tag[i].classList.remove("fn-active");
+// 		//       		tag[i].classList.remove("tf-active");
+// 		//       		tag[i].classList.remove("st-active");
 
-		// 	}
-		// 	this.classList.add("st-active");	
-		// }
-		// if(name === ".server-stay"){
-  //           			$(".triangle").css("left","75.08%");
-  //           			console.log($(".triangle").css("left"));
-  //           			for(var i = 0, len = tag.length; i < len; i++){
-		// 		tag[i].classList.remove("fb-active");
-		//       		tag[i].classList.remove("fo-active");
-		//       		tag[i].classList.remove("fn-active");
-		//       		tag[i].classList.remove("tf-active");
-		//       		tag[i].classList.remove("st-active");
+// 		// 	}
+// 		// 	this.classList.add("fo-active");
+// 		// }
+// 		// if(name === ".server-fun"){
+// 		//             $('.triangle').css("left","49.28%");
+// 		//             	for(var i = 0, len = tag.length; i < len; i++){
+// 		// 		tag[i].classList.remove("fb-active");
+// 		//       		tag[i].classList.remove("fo-active");
+// 		//       		tag[i].classList.remove("tf-active");
+// 		//       		tag[i].classList.remove("st-active");
 
-		// 	}
-		// 	this.classList.add("active");
-		// }
+// 		// 	}
+// 		// 	this.classList.add("fn-active");
+// 		// }
+// 		//  if(name===".server-traffic"){	
+//   //           			$('.triangle').css("left","62.18%");
+//   //           			for(var i = 0, len = tag.length; i < len; i++){
+// 		// 		tag[i].classList.remove("fb-active");
+// 		//       		tag[i].classList.remove("fo-active");
+// 		//       		tag[i].classList.remove("fn-active");
+// 		//       		tag[i].classList.remove("tf-active");
+
+// 		// 	}
+// 		// 	this.classList.add("st-active");	
+// 		// }
+// 		// if(name === ".server-stay"){
+//   //           			$(".triangle").css("left","75.08%");
+//   //           			console.log($(".triangle").css("left"));
+//   //           			for(var i = 0, len = tag.length; i < len; i++){
+// 		// 		tag[i].classList.remove("fb-active");
+// 		//       		tag[i].classList.remove("fo-active");
+// 		//       		tag[i].classList.remove("fn-active");
+// 		//       		tag[i].classList.remove("tf-active");
+// 		//       		tag[i].classList.remove("st-active");
+
+// 		// 	}
+// 		// 	this.classList.add("active");
+// 		// }
 		// for(var i = 0, len = tag.length; i < len; i++){
 		// 	tag[i].classList.remove("fb-active");
 		// 	tag[i].classList.remove("fo-active");
@@ -90,105 +97,105 @@ window.onload = function() {
 		// }
 		// this.classList.add("st-active");	
 		// this.parent().classList.add("active");
-	var $this = $(this);
-        var server = $('.server-tab');
-        server.hide();
-        var name = ".ser"+$this.attr("class").toString();
-        $(name).show();
-        ChangePhoto();
-        if(name === ".server-football"){
-            $('.triangle').css("left","23.48%");
-            $('.ver-football').css("color","#fff");
-            $('.ver-food').css("color","#b2b2b2");
-            $('.ver-fun').css("color","#b2b2b2");
-            $('.ver-traffic').css("color","#b2b2b2");
-            $('.ver-stay').css("color","#b2b2b2");
-            $('.ver-football').css("background","#fc3e4c");
-            // $('.ver-fun').css("background","#fff2eb");
-            // $('.ver-food').css("background","#fff2eb");
-            // $('.ver-traffic').css("background","#fff2eb");
-            // $('.ver-stay').css("background","#fff2eb");
-            // $('.server').css("background","");
-        }
-        if(name === ".server-food" ){
-            $('.triangle').css("left","36.38%");
-            $('.ver-food').css("color","#fff");
-            $('.ver-football').css("color","#b2b2b2");
-            $('.ver-fun').css("color","#b2b2b2");
-            $('.ver-traffic').css("color","#b2b2b2");
-            $('.ver-stay').css("color","#b2b2b2");
-            $('.ver-food').css("background","#fc3e4c");
-            // $('.ver-football').css("background","#fff2eb");
-            // $('.ver-fun').css("background","#fff2eb");
-            // $('.ver-traffic').css("background","#fff2eb");
-            // $('.ver-stay').css("background","#fff2eb");
-        }
-        if(name === ".server-fun"){
-            $('.triangle').css("left","49.28%");
-            $('.ver-food').css("color","#b2b2b2");
-            $('.ver-football').css("color","#b2b2b2");
-            $('.ver-traffic').css("color","#b2b2b2");
-            $('.ver-stay').css("color","#b2b2b2");
-            $('.ver-fun').css("color","#fff");
-            $('.ver-fun').css("background","#fc3e4c");
-            // $('.ver-football').css("background","#fff2eb");
-            // $('.ver-food').css("background","#fff2eb");
-            // $('.ver-traffic').css("background","#fff2eb");
-            // $('.ver-stay').css("background","#fff2eb");
-        }
-        if(name===".server-traffic"){
-            $('.triangle').css("left","62.18%");
-            $('.ver-traffic').css("color","#fff");
-            $('.ver-food').css("color","#b2b2b2");
-            $('.ver-football').css("color","#b2b2b2");
-            $('.ver-fun').css("color","#b2b2b2");
-            $('.ver-stay').css("color","#b2b2b2");
-            $('.ver-traffic').css("background","#fc3e4c");
-            // $('.ver-football').css("background","#fff2eb");
-            // $('.ver-food').css("background","#fff2eb");
-            // $('.ver-fun').css("background","#fff2eb");
-            // $('.ver-stay').css("background","#fff2eb");
-        }
-        if(name === ".server-stay"){
-            $(".triangle").css("left","75.08%");
-            $('.ver-stay').css("color","#fff");
-            $('.ver-food').css("color","#b2b2b2");
-            $('.ver-football').css("color","#b2b2b2");
-            $('.ver-traffic').css("color","#b2b2b2");
-            $('.ver-fun').css("color","#b2b2b2");
-            $('.ver-stay').css("background","#fc3e4c");
-            // $('.ver-football').css("background","#fff2eb");
-            // $('.ver-food').css("background","#fff2eb");
-            // $('.ver-traffic').css("background","#fff2eb");
-            // $('.ver-fun').css("background","#fff2eb");
-        }
-        $('.ver-football').on("mouseover",function() {
-            $(".ver-football").css("background-color","#fc3e4c");
-            // $(".ver-food").css("background-color","#fff2eb");
-            // $(".ver-fun").css("background-color","#fff2eb");
-            // $(".ver-traffic").css("background-color","#fff2eb");
-            // $(".ver-stay").css("background-color","#fff2eb");
-        });
-        $('.ver-football').on("mouseover",function() {
-            $(".ver-football").css("background-color","#fff2eb");
-            $(".ver-football").css("background-color","#fff2eb");
-            $(".ver-football").css("background-color","#fff2eb");
-            $(".ver-football").css("background-color","#fff2eb");
-            $(".ver-football").css("background-color","#fff2eb");
-        });
-        $('.ver-food').on("mouseover",function() {
-            $(".ver-food").css("background-color","#ffca76");
-        });
-        $('.ver-fun').on("mouseover",function() {
-            $(".ver-fun").css("background-color","#ffe57e");
-        });
-        $('.ver-traffic').on("mouseover",function() {
-            $(".ver-traffic").css("background-color","#a4dbff");
-        });
-        $('.ver-stay').on("mouseover",function() {
-            $(".ver-stay").css("background-color","#decdff");
-        });
-})
+// 	var $this = $(this);
+//         var server = $('.server-tab');
+//         server.hide();
+//         var name = ".ser"+$this.attr("class").toString();
+//         $(name).show();
+//         ChangePhoto();
+//         if(name === ".server-football"){
+//             $('.triangle').css("left","23.48%");
+//             $('.ver-football').css("color","#fff");
+//             $('.ver-food').css("color","#b2b2b2");
+//             $('.ver-fun').css("color","#b2b2b2");
+//             $('.ver-traffic').css("color","#b2b2b2");
+//             $('.ver-stay').css("color","#b2b2b2");
+//             $('.ver-football').css("background","#fc3e4c");
+//             // $('.ver-fun').css("background","#fff2eb");
+//             // $('.ver-food').css("background","#fff2eb");
+//             // $('.ver-traffic').css("background","#fff2eb");
+//             // $('.ver-stay').css("background","#fff2eb");
+//             // $('.server').css("background","");
+//         }
+//         if(name === ".server-food" ){
+//             $('.triangle').css("left","36.38%");
+//             $('.ver-food').css("color","#fff");
+//             $('.ver-football').css("color","#b2b2b2");
+//             $('.ver-fun').css("color","#b2b2b2");
+//             $('.ver-traffic').css("color","#b2b2b2");
+//             $('.ver-stay').css("color","#b2b2b2");
+//             $('.ver-food').css("background","#fc3e4c");
+//             // $('.ver-football').css("background","#fff2eb");
+//             // $('.ver-fun').css("background","#fff2eb");
+//             // $('.ver-traffic').css("background","#fff2eb");
+//             // $('.ver-stay').css("background","#fff2eb");
+//         }
+//         if(name === ".server-fun"){
+//             $('.triangle').css("left","49.28%");
+//             $('.ver-food').css("color","#b2b2b2");
+//             $('.ver-football').css("color","#b2b2b2");
+//             $('.ver-traffic').css("color","#b2b2b2");
+//             $('.ver-stay').css("color","#b2b2b2");
+//             $('.ver-fun').css("color","#fff");
+//             $('.ver-fun').css("background","#fc3e4c");
+//             // $('.ver-football').css("background","#fff2eb");
+//             // $('.ver-food').css("background","#fff2eb");
+//             // $('.ver-traffic').css("background","#fff2eb");
+//             // $('.ver-stay').css("background","#fff2eb");
+//         }
+//         if(name===".server-traffic"){
+//             $('.triangle').css("left","62.18%");
+//             $('.ver-traffic').css("color","#fff");
+//             $('.ver-food').css("color","#b2b2b2");
+//             $('.ver-football').css("color","#b2b2b2");
+//             $('.ver-fun').css("color","#b2b2b2");
+//             $('.ver-stay').css("color","#b2b2b2");
+//             $('.ver-traffic').css("background","#fc3e4c");
+//             // $('.ver-football').css("background","#fff2eb");
+//             // $('.ver-food').css("background","#fff2eb");
+//             // $('.ver-fun').css("background","#fff2eb");
+//             // $('.ver-stay').css("background","#fff2eb");
+//         }
+//         if(name === ".server-stay"){
+//             $(".triangle").css("left","75.08%");
+//             $('.ver-stay').css("color","#fff");
+//             $('.ver-food').css("color","#b2b2b2");
+//             $('.ver-football').css("color","#b2b2b2");
+//             $('.ver-traffic').css("color","#b2b2b2");
+//             $('.ver-fun').css("color","#b2b2b2");
+//             $('.ver-stay').css("background","#fc3e4c");
+//             // $('.ver-football').css("background","#fff2eb");
+//             // $('.ver-food').css("background","#fff2eb");
+//             // $('.ver-traffic').css("background","#fff2eb");
+//             // $('.ver-fun').css("background","#fff2eb");
+//         }
+//         $('.ver-football').on("mouseover",function() {
+//             $(".ver-football").css("background-color","#fc3e4c");
+//             // $(".ver-food").css("background-color","#fff2eb");
+//             // $(".ver-fun").css("background-color","#fff2eb");
+//             // $(".ver-traffic").css("background-color","#fff2eb");
+//             // $(".ver-stay").css("background-color","#fff2eb");
+//         });
+//         $('.ver-football').on("mouseover",function() {
+//             $(".ver-football").css("background-color","#fff2eb");
+//             $(".ver-football").css("background-color","#fff2eb");
+//             $(".ver-football").css("background-color","#fff2eb");
+//             $(".ver-football").css("background-color","#fff2eb");
+//             $(".ver-football").css("background-color","#fff2eb");
+//         });
+//         $('.ver-food').on("mouseover",function() {
+//             $(".ver-food").css("background-color","#ffca76");
+//         });
+//         $('.ver-fun').on("mouseover",function() {
+//             $(".ver-fun").css("background-color","#ffe57e");
+//         });
+//         $('.ver-traffic').on("mouseover",function() {
+//             $(".ver-traffic").css("background-color","#a4dbff");
+//         });
+//         $('.ver-stay').on("mouseover",function() {
+//             $(".ver-stay").css("background-color","#decdff");
+//         });
+// })
 
 	var control = 0;
 	$(window).scroll(function(){
@@ -260,4 +267,4 @@ window.onload = function() {
 
 
 	
-})
+}

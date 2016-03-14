@@ -101,11 +101,50 @@ a {
 .server-nav {
 	padding: 0 17.5%;
 	list-style: none;
+	border: none;
 }
 .server-nav li {
 	width: 20%;
 	padding: 0px;
+	margin: 0;
 	float: left;
+
+}
+#tab-list li.active  .fb-tab-btn {
+	background: #fc3e4c;
+}
+#tab-list li.active  .fo-tab-btn {
+	background: #fc3e4c;
+}
+#tab-list li.active  .fn-tab-btn {
+	background: #ffd014;
+}
+#tab-list li.active  .tf-tab-btn {
+	background: #37b4fd;
+}
+#tab-list li.active  .st-tab-btn {
+	background: #b59ce5;
+}
+#tab-list li .fb-tab-btn,#tab-list li  .fo-tab-btn,#tab-list li  .fn-tab-btn,#tab-list li  .tf-tab-btn,#tab-list li  .st-tab-btn {
+	border: none;
+	border-radius: 0;
+	margin: 0 ;
+}
+#tab-list li .fb-tab-btn:hover {
+	background: #fc3e4c;
+	color: #fff;
+}
+#tab-list li  .fo-tab-btn:hover {
+	background: #ffca76;	
+}
+#tab-list li  .fn-tab-btn:hover {
+	background: #ffe57e;	
+}
+#tab-list li  .tf-tab-btn:hover {
+	background: #a4dbff;	
+}
+#tab-list li  .st-tab-btn:hover {
+	background: #decdff;	
 }
 .server-nav .fo-active,.server-nav .fb-active,.server-nav .st-active,.server-nav .fn-active,.server-nav .tf-active{
 	background: #fc3e4c;
@@ -135,7 +174,6 @@ a {
 }*/
 .triangle {
 	position: absolute;
-    	left: 23.48%;
     	bottom: -10px;
 	width: 0;
 	height: 0;
@@ -143,9 +181,39 @@ a {
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 }
+#triangle-fb {
+	left: 23.48%;
+	border-top: 10px solid #fc3e4c;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+#triangle-fo {
+	left: 36.38%;
+	border-top: 10px solid #fc3e4c;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;	
+}
+#triangle-fn {
+	left: 49.28%;
+	border-top: 10px solid  #ffd014;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;	
+}
+#triangle-tf {
+	left: 62.18%;
+	border-top: 10px solid #37b4fd;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;	
+}
+#triangle-st {
+	left: 75.08%;
+	border-top: 10px solid #b59ce5;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;	
+}
 /*server- football 模块*/
 .server-football {
-/*	display: none;*/
+	display: none;
 }
 #ft-sl .lt {
 	padding: 4rem 4rem 0rem 0rem;
@@ -285,7 +353,7 @@ a {
 		padding: 1rem 1rem 0rem 0rem; 
 	}
 	#ft-sl .lt span ,#fo-sl .lt span ,#tf-lt .lt span ,#fun-sl .lt span , .st-tr span, .lt span, #tf-sl .lt span {
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 	}
 	#fun-sl .lt , .st-tr {
 		padding:  1rem 0rem 0rem 1rem;
