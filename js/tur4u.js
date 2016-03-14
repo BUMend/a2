@@ -90,7 +90,7 @@ window.onload = function() {
 		// }
 		// this.classList.add("st-active");	
 		// this.parent().classList.add("active");
-var $this = $(this);
+	var $this = $(this);
         var server = $('.server-tab');
         server.hide();
         var name = ".ser"+$this.attr("class").toString();
@@ -188,7 +188,7 @@ var $this = $(this);
         $('.ver-stay').on("mouseover",function() {
             $(".ver-stay").css("background-color","#decdff");
         });
-	})
+})
 
 	var control = 0;
 	$(window).scroll(function(){
@@ -245,9 +245,19 @@ var $this = $(this);
 			transform : 'scale(1.0,1.0)',
 			transition : 'transform 1s'	
 		});
+
 		$(this).find('.mask').css({
 			zIndex : 0
 		});	
 	})
-            
-}
+	//导航栏
+	$(window.document).scroll(function() {
+		$(".navbar").addClass("scroll");
+		if($(this).scrollTop() == 0){
+			$(".navbar").removeClass("scroll");
+		}
+	});       
+
+
+	
+})
