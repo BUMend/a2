@@ -3,7 +3,7 @@ html, body, h1, h4, ul {
 	min-width: 768px;
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	font-family: 'Microsoft Yahei', Helvetica, Arial, sans-serif; 
 }
 
@@ -116,11 +116,9 @@ a {
 }
 .server-msg a {
 	display: inline-block;
-	margin-left: -.5rem;
-	width: 15%;
 	line-height: 3rem;
 	color: #b2b2b2;
-	background: #fff2eb;
+	background: #fc3e2c;
 	text-decoration: none;
 }
 .server-msg a:hover {
@@ -130,8 +128,9 @@ a {
 	position: relative;
 }
 .triangle {
-	position: relative;
-	left: 20%;
+	position: absolute;
+    	left: 119px;
+    	bottom: -40px;
 	width: 0;
 	height: 0;
 	border-top: 10px solid #fc3e2c;
@@ -220,7 +219,7 @@ a {
 /*模块*/
 .food{
 	float: left;
-	padding: 1% 15%;
+	padding: 5% 15%;
 }
 .food-arrow {
 	position: relative;
@@ -313,6 +312,7 @@ a {
 /*team 团队介绍板块*/
 .team {
 	width: 100%;
+	margin: 0;
 	padding-top: 15rem;
 	padding-bottom: 15rem;
 }
@@ -322,7 +322,7 @@ a {
 	left: 10%;
 	width: 80%;
 	background: url(../img/team-bg.png) no-repeat;
-	background-size: 100% 100%;
+	background-size: 100% 95%;
 }
 .team h4 {
 	color: #fc3e4c;
@@ -330,20 +330,22 @@ a {
 .team img {
 	display: block;
 	margin: 0 auto;
-	margin-top: 2rem;
 	margin-bottom: -60px;
 	width: 80%;
 }
+.team-img {
+	padding-top: 7em;
+}
 .team-word {
 	height: 100%;
-	font-size: 1.5rem;
+	font-size: 1rem;
     	padding-top: 7rem;
     	text-align: left;
     	color: #222;
 	background: url(../img/team-til.png) no-repeat 90% 0%;
 	background-size: 10%;
 }
-@media screen and (max-width: 1980px) {
+/*@media screen and (max-width: 1980px) {
 	.team-word {
 		font-size: 2rem;
 	}
@@ -352,7 +354,7 @@ a {
 	.team-word {
 		font-size: 1.5rem;
 	}
-}
+}*/
 .team-word p {
 	margin-top: 2.5rem;
 }
@@ -401,6 +403,9 @@ a {
 	display: block;
 }
 /*easy*/
+.easy {
+	margin: 0;
+}
 .easy-msg {
 	float: left;
 	position: relative;
