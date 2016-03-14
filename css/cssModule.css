@@ -1,13 +1,11 @@
 /*reset  */
 html, body, h1, h4, ul {
-	min-width: 768px;
 	margin: 0;
 	padding: 0;
-	/*overflow-x: hidden;*/
 	font-family: 'Microsoft Yahei', Helvetica, Arial, sans-serif; 
 }
-
 html,body {
+	min-width: 768px;
 	height: 100%;
 	font-size: 62.5%;
 	line-height: 1;
@@ -32,6 +30,8 @@ a {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 	height: 12rem;
+/*	background: url(../img/shadow.png) no-repeat 72% 6%;
+	background-size: 50% 177%;*/
 }
 .card img {
 	width: 30%;
@@ -43,32 +43,18 @@ a {
 }
 /*navbar 导航栏*/
 .navbar {
-	margin-bottom: 0;
-	font-size: 1.5rem;
-	background: transparent;
+	min-height: 0;
 	border: none;
-	overflow-x: hidden; 
-}
-.navbar-nav {
-	float: right;
-	margin-right: 10rem;
-}
-.navbar-nav li {
-	padding-left: 2rem;
-	padding-right: 2rem;
-	border-bottom: 2px solid transparent;
-}
-.navbar .navbar-brand {
-	color: #fff;
-} 
-.navbar-default .navbar-toggle {
-	border: none;
-}
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	font-size: 1.2rem;
 	background: transparent;
 }
-.navbar-default .navbar-toggle .icon-bar {
-	background: #f2303e;
+.navbar .navbar-right a {
+	padding: 5px 30px;
+	border-bottom: 3px solid transparent;
+}
+.navbar .navbar-right a:hover {
+	color: #fc3e2c;
+	border-bottom: 3px solid #fc3e2c;
 }
 .scroll {
 	background: #222;
@@ -78,7 +64,7 @@ a {
 /*header 标题页*/
 .header {
 	position: relative;
-	width: 100%;
+	/*width: 100%;*/
 	height: 100%;
 	color: #fff;
 	font-weight: 900;
@@ -313,14 +299,10 @@ a {
 .team {
 	width: 100%;
 	margin: 0;
-	padding-top: 15rem;
-	padding-bottom: 15rem;
+	padding: 15rem 15%;
 }
 .team-msg {
 	float: left;
-	position: relative;
-	left: 10%;
-	width: 80%;
 	background: url(../img/team-bg.png) no-repeat;
 	background-size: 100% 95%;
 }
@@ -331,7 +313,7 @@ a {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: -60px;
-	width: 80%;
+	width: 100%;
 }
 .team-img {
 	padding-top: 7em;
@@ -345,16 +327,6 @@ a {
 	background: url(../img/team-til.png) no-repeat 90% 0%;
 	background-size: 10%;
 }
-/*@media screen and (max-width: 1980px) {
-	.team-word {
-		font-size: 2rem;
-	}
-}
-@media screen and (max-width: 1240px) {
-	.team-word {
-		font-size: 1.5rem;
-	}
-}*/
 .team-word p {
 	margin-top: 2.5rem;
 }
@@ -363,7 +335,7 @@ a {
 }
 .team a {
 	display: block;
-	margin-top: 1rem;
+	margin-top: 5rem;
 	width: 40%;
 	line-height: 3rem;
 	color: #fff;
@@ -372,6 +344,11 @@ a {
 	text-align: center;
 	background: #f2303e;
 	white-space: nowrap; 
+}
+@media screen and (max-width: 1800px) {
+	.team a {
+		margin-top: 10rem;
+	}
 }
 /*feature 旅行特色板块*/
 .feature {
@@ -414,7 +391,7 @@ a {
 	margin-bottom: 5rem;
 	width: 80%;
 	background: url(../img/team-bg.png) no-repeat;
-	background-size: 100% 100%;
+	background-size: 100% 80%;
 }
 .easy-word {
 	height: 100%;
@@ -422,15 +399,33 @@ a {
     	padding-top: 7rem;
     	text-align: right;
     	color: #222;
-	background: url(../img/team-til.png) no-repeat 0% 0%;
+	background: url(../img/team-til.png) no-repeat 5% 0%;
 	background-size: 10%;
 }
 .easy-word p {
 	font-size: 2rem;
 	margin-top: 3rem;
 }
-
-
+.easy-word p + p {
+	margin: 0;
+}
+.easy-man img {
+	margin-bottom: -50px;
+}
+.easy-title {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	color: #fff;
+	background: #000;
+}
+.easy-title img {
+	width: 50%;
+}
+.easy-title p {
+	float: right;
+	margin-top: 2rem;
+	padding-left: 2rem;
+}
 /*contact 联系方式*/
 .contact {
 	color: #fff;
@@ -455,15 +450,15 @@ a {
 }
 .contact-phone {
 	background: url(../img/con-1.png) no-repeat 10% 50%;
-	background-size: 75px 75px;
+	background-size: 50px 50px;
 }
 .contact-website {
 	background: url(../img/con-2.png) no-repeat 10% 50%;
-	background-size: 75px 75px;
+	background-size: 50px 50px;
 }
 .contact-address {
 	background: url(../img/con-3.png) no-repeat 10% 20%;
-	background-size: 75px 75px;
+	background-size: 50px 50px;
 }
 .contact-address span {
 	display: block;

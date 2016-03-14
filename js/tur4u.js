@@ -56,5 +56,12 @@ $(document).ready(function() {
 			transform : 'scale(1,1)',
 			transition : 'transform 1s'	
 		});
-	})	
+	});
+	//导航栏
+	$(window.document).scroll(function() {
+		$(".navbar").addClass("scroll");
+		if($(this).scrollTop() == 0){
+			$(".navbar").removeClass("scroll");
+		}
+	});	
 })
