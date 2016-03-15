@@ -109,7 +109,8 @@ a {
 }
 .server-msg {
 	position: relative;
-	margin-top: -35px;
+	z-index: 2;
+	margin-top: 0px;
 }
 .server-nav {
 	padding: 0 17.5%;
@@ -315,7 +316,7 @@ a {
 	overflow: hidden;
 }
 .show-left, .show-right ,#st-sl, #st-ct, #st-sr{
-	margin: 9.77% 0;
+	margin: 4.77% 0;
 }
 .food-arrow {
 	position: relative;
@@ -378,7 +379,7 @@ a {
 		padding:  1rem 0rem 0rem 1rem;
 	}
 	.mask {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
 }
 /* 平板 */
@@ -394,7 +395,7 @@ a {
 		padding:  1rem 0rem 0rem .6rem;
 	}
 	.mask span {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
 	
 }
@@ -418,7 +419,6 @@ a {
     float: left;
     width: 67.05%;
     height: 60.32%;
-
 }
 
 .lb, .rt , .rtl, .rtr, #st-sl, .st-br, .st-tr, .st-bl,.st-tl {
@@ -445,6 +445,7 @@ a {
 	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 50% ,rgba(0,0,0,.5) 100%);
 	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 50% ,rgba(0,0,0,.5) 100%);
 	opacity: 1;
+	filter:alpha(opacity=100);
 	*opacity: 1;
 	+opacity: 1;
 	_opacity: 1;
@@ -455,56 +456,71 @@ a {
 @-webkit-keyframes fadeIn {
 	0% {
 		opacity: 0; /*初始状态 透明度为0*/
+		filter:alpha(opacity=0);
 	}
 	50% {
 		opacity: .8; /*中间状态 透明度为0*/
+		filter:alpha(opacity=80);
 	}
 	100% {
 		opacity: 1; /*结尾状态 透明度为1*/
+		filter:alpha(opacity=100);
 	}
 }
 @-moz-keyframes fadeIn {
 	0% {
 		opacity: 0; /*初始状态 透明度为0*/
+		filter:alpha(opacity=0);
 	}
 	50% {
 		opacity: .8; /*中间状态 透明度为0*/
+		filter:alpha(opacity=80);
 	}
 	100% {
 		opacity: 1; /*结尾状态 透明度为1*/
+		filter:alpha(opacity=100);
 	}
 }
 @-ms-keyframes fadeIn {
 	0% {
 		opacity: 0; /*初始状态 透明度为0*/
+		filter:alpha(opacity=0);
 	}
 	50% {
 		opacity: .8; /*中间状态 透明度为0*/
+		filter:alpha(opacity=80);
 	}
 	100% {
 		opacity: 1; /*结尾状态 透明度为1*/
+		filter:alpha(opacity=100);
 	}
 }
 @-o-keyframes fadeIn {
 	0% {
 		opacity: 0; /*初始状态 透明度为0*/
+		filter:alpha(opacity=0);
 	}
 	50% {
 		opacity: .8; /*中间状态 透明度为0*/
+		filter:alpha(opacity=80);
 	}
 	100% {
 		opacity: 1; /*结尾状态 透明度为1*/
+		filter:alpha(opacity=100);
 	}
 }
 @keyframes fadeIn {
 	0% {
 		opacity: 0; /*初始状态 透明度为0*/
+		filter:alpha(opacity=0);
 	}
 	50% {
 		opacity: .8; /*中间状态 透明度为0*/
+		filter:alpha(opacity=80);
 	}
 	100% {
 		opacity: 1; /*结尾状态 透明度为1*/
+		filter:alpha(opacity=100);
 	}
 }
 .mask p {
@@ -679,7 +695,7 @@ a {
 /*contact 联系方式*/
 .contact {
 	padding: 0 19.7%;
-	border-bottom: 3rem solid #000;
+	border-bottom: 1rem solid #000;
 	color: #fff;
 	font-size: 1.8rem;
 	font-weight: 100;

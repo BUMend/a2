@@ -1,5 +1,13 @@
 window.onload = function() {
-
+	var windowHeight =  $(window).height();
+	var navHeight = $("#bs-example-navbar-collapse-1").height();
+	$("#index").on("click",function(){
+		$(".server-msg").css("margin-top","0px");
+	});
+	$("#production").on("click",function(){
+		scrollTo(0,windowHeight-navHeight-35);
+		$(".server-msg").css("margin-top","-35px");
+	});
             var ChangePhoto = function() {
                 $('#ft-sl').height($('#ft-sl').width()*2);                
                 $('#fo-sl').height($('#fo-sl').width()*2);
