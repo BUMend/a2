@@ -1,13 +1,29 @@
 window.onload = function() {
-	var windowHeight =  $(window).height();
-	var navHeight = $("#bs-example-navbar-collapse-1").height();
-	$("#index").on("click",function(){
-		$(".server-msg").css("margin-top","0px");
-	});
-	$("#production").on("click",function(){
-		scrollTo(0,windowHeight-navHeight-35);
-		$(".server-msg").css("margin-top","-35px");
-	});
+
+		var windowHeight =  $(window).height();
+		var navHeight = $("#bs-example-navbar-collapse-1").height();
+		$("#index").on("click",function(){
+			$(".server-msg").css("margin-top","0px");
+		});
+		$("#production").on("click",function(){
+			scrollTo(0,windowHeight-navHeight-35);
+			$(".server-msg").css("margin-top","-35px");
+		});
+
+	
+		var index = 0;
+		function collHeader() {
+			index ++;
+			index == 4 && (index = 1);
+			var path = "img/header" + index + ".jpg";
+			console.log(path);
+			$(".header").css("background", "url(" + path + ") no-repeat 50% 50%");
+			$(".header").css("background-size", "100% 150%");
+			setTimeout(collHeader, 5000);
+		}
+		collHeader();
+
+
             var ChangePhoto = function() {
                 $('#ft-sl').height($('#ft-sl').width()*2);                
                 $('#fo-sl').height($('#fo-sl').width()*2);
