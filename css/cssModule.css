@@ -578,7 +578,7 @@ a {
 	background: #f2303e;
 	white-space: nowrap; 
 }
-.team a:hover {
+.team a:hover, .team a:visited, .team a:link {
 	text-decoration: none;
 	cursor: default;
 }
