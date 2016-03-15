@@ -1,4 +1,16 @@
 window.onload = function() {
+	
+		var index = 0;
+		function collHeader() {
+			index ++;
+			index == 4 && (index = 1);
+			var path = "img/header" + index + ".jpg";
+			console.log(path);
+			$(".header").css("background", "url(" + path + ") no-repeat 50% 50%");
+			$(".header").css("background-size", "100% 150%");
+			setTimeout(collHeader, 5000);
+		}
+		collHeader();
 
             var ChangePhoto = function() {
                 $('#ft-sl').height($('#ft-sl').width()*2);                
