@@ -1,167 +1,77 @@
 window.onload = function() {
-            var ChangePhoto = function() {
-                $('#ft-sl').height($('#ft-sl').width()*2);                
-                $('#fo-sl').height($('#fo-sl').width()*2);
-                $('#tf-sl').height($('#tf-sl').width()*2);
-                $('#fun-sl').height($('#fun-sl').width()*2);       
-                $('#st-sl').height($('#st-sl').width()/0.648);  
-                $('#ft-sr').height($('#ft-sl').height());
-                $('#fo-sr').height($('#fo-sl').height());
-                $('#tf-sr').height($('#tf-sl').height());
-                $('#fun-sr').height($('#fun-sl').height());
-                $('#st-sr').height($('#st-sl').height());
-                $('#st-ct').height($('#st-sl').height());
-            }
-            ChangePhoto();
-            $(window).on('resize',function() {
-                ChangePhoto();
-            });
+
+	//改变服务四大模块的图片布局
+      var ChangePhoto = function() {
+          $('#ft-sl').height($('#ft-sl').width()*2);                
+          $('#fo-sl').height($('#fo-sl').width()*2);
+          $('#tf-sl').height($('#tf-sl').width()*2);
+          $('#fun-sl').height($('#fun-sl').width()*2);       
+          $('#st-sl').height($('#st-sl').width()/0.648);  
+          $('#ft-sr').height($('#ft-sl').height());
+          $('#fo-sr').height($('#fo-sl').height());
+          $('#tf-sr').height($('#tf-sl').height());
+          $('#fun-sr').height($('#fun-sl').height());
+          $('#st-sr').height($('#st-sl').height());
+          $('#st-ct').height($('#st-sl').height());
+      }
+      ChangePhoto();
+      $(window).on('resize',function() {
+          ChangePhoto();
+      });
+
+      //切换选项卡
 	$('.server-msg a').on("click",function(){
-		// var $this = $(this);
-		// var server = $('.server-tab');
-		// var tag = $('.server-msg')[0].getElementsByTagName("a");
-		// server.hide();
-		// var name = ".ser"+$this.attr("class").toString();
-		// $(name).show();
-		// ChangePhoto();
-		// if(name === ".server-football"){
-  //           			$('.triangle').css("left","23.48%");
-	 //            		for(var i = 0, len = tag.length; i < len; i++){
-		// 		tag[i].classList.remove("fb-active");
-		//       		tag[i].classList.remove("fn-active");
-		//       		tag[i].classList.remove("tf-active");
-		//       		tag[i].classList.remove("st-active");
-		// 	}
-		// 	this.classList.add("fo-active");
-  //           		}
-  //           		if(name === ".server-food" ){
-  //           			$('.triangle').css("left","36.38%");
-  //           			for(var i = 0, len = tag.length; i < len; i++){
-		// 		tag[i].classList.remove("fb-active");
-		//       		tag[i].classList.remove("fn-active");
-		//       		tag[i].classList.remove("tf-active");
-		//       		tag[i].classList.remove("st-active");
-
-		// 	}
-		// 	this.classList.add("fo-active");
-		// }
-		// if(name === ".server-fun"){
-		//             $('.triangle').css("left","49.28%");
-		//             	for(var i = 0, len = tag.length; i < len; i++){
-		// 		tag[i].classList.remove("fb-active");
-		//       		tag[i].classList.remove("fo-active");
-		//       		tag[i].classList.remove("tf-active");
-		//       		tag[i].classList.remove("st-active");
-
-		// 	}
-		// 	this.classList.add("fn-active");
-		// }
-		//  if(name===".server-traffic"){	
-  //           			$('.triangle').css("left","62.18%");
-  //           			for(var i = 0, len = tag.length; i < len; i++){
-		// 		tag[i].classList.remove("fb-active");
-		//       		tag[i].classList.remove("fo-active");
-		//       		tag[i].classList.remove("fn-active");
-		//       		tag[i].classList.remove("tf-active");
-
-		// 	}
-		// 	this.classList.add("st-active");	
-		// }
-		// if(name === ".server-stay"){
-  //           			$(".triangle").css("left","75.08%");
-  //           			console.log($(".triangle").css("left"));
-  //           			for(var i = 0, len = tag.length; i < len; i++){
-		// 		tag[i].classList.remove("fb-active");
-		//       		tag[i].classList.remove("fo-active");
-		//       		tag[i].classList.remove("fn-active");
-		//       		tag[i].classList.remove("tf-active");
-		//       		tag[i].classList.remove("st-active");
-
-		// 	}
-		// 	this.classList.add("active");
-		// }
-		// for(var i = 0, len = tag.length; i < len; i++){
-		// 	tag[i].classList.remove("fb-active");
-		// 	tag[i].classList.remove("fo-active");
-		// 	tag[i].classList.remove("fn-active");
-		// 	tag[i].classList.remove("tf-active");
-		// 	tag[i].parent().classList.remove("active");
-
-		// }
-		// this.classList.add("st-active");	
-		// this.parent().classList.add("active");
-	var $this = $(this);
-        var server = $('.server-tab');
-        server.hide();
-        var name = ".ser"+$this.attr("class").toString();
-        $(name).show();
-        ChangePhoto();
-        if(name === ".server-football"){
-            $('.triangle').css("left","23.48%");
-            $('.ver-football').css("color","#fff");
-            $('.ver-food').css("color","#b2b2b2");
-            $('.ver-fun').css("color","#b2b2b2");
-            $('.ver-traffic').css("color","#b2b2b2");
-            $('.ver-stay').css("color","#b2b2b2");
-            $('.ver-football').css("background","#fc3e4c");
-            // $('.ver-fun').css("background","#fff2eb");
-            // $('.ver-food').css("background","#fff2eb");
-            // $('.ver-traffic').css("background","#fff2eb");
-            // $('.ver-stay').css("background","#fff2eb");
-            // $('.server').css("background","");
-        }
-        if(name === ".server-food" ){
-            $('.triangle').css("left","36.38%");
-            $('.ver-food').css("color","#fff");
-            $('.ver-football').css("color","#b2b2b2");
-            $('.ver-fun').css("color","#b2b2b2");
-            $('.ver-traffic').css("color","#b2b2b2");
-            $('.ver-stay').css("color","#b2b2b2");
-            $('.ver-food').css("background","#fc3e4c");
-            // $('.ver-football').css("background","#fff2eb");
-            // $('.ver-fun').css("background","#fff2eb");
-            // $('.ver-traffic').css("background","#fff2eb");
-            // $('.ver-stay').css("background","#fff2eb");
-        }
-        if(name === ".server-fun"){
-            $('.triangle').css("left","49.28%");
-            $('.ver-food').css("color","#b2b2b2");
-            $('.ver-football').css("color","#b2b2b2");
-            $('.ver-traffic').css("color","#b2b2b2");
-            $('.ver-stay').css("color","#b2b2b2");
-            $('.ver-fun').css("color","#fff");
-            $('.ver-fun').css("background","#fc3e4c");
-            // $('.ver-football').css("background","#fff2eb");
-            // $('.ver-food').css("background","#fff2eb");
-            // $('.ver-traffic').css("background","#fff2eb");
-            // $('.ver-stay').css("background","#fff2eb");
-        }
-        if(name===".server-traffic"){
-            $('.triangle').css("left","62.18%");
-            $('.ver-traffic').css("color","#fff");
-            $('.ver-food').css("color","#b2b2b2");
-            $('.ver-football').css("color","#b2b2b2");
-            $('.ver-fun').css("color","#b2b2b2");
-            $('.ver-stay').css("color","#b2b2b2");
-            $('.ver-traffic').css("background","#fc3e4c");
-            // $('.ver-football').css("background","#fff2eb");
-            // $('.ver-food').css("background","#fff2eb");
-            // $('.ver-fun').css("background","#fff2eb");
-            // $('.ver-stay').css("background","#fff2eb");
-        }
-        if(name === ".server-stay"){
-            $(".triangle").css("left","75.08%");
-            $('.ver-stay').css("color","#fff");
-            $('.ver-food').css("color","#b2b2b2");
-            $('.ver-football').css("color","#b2b2b2");
-            $('.ver-traffic').css("color","#b2b2b2");
-            $('.ver-fun').css("color","#b2b2b2");
-            $('.ver-stay').css("background","#fc3e4c");
-            // $('.ver-football').css("background","#fff2eb");
-            // $('.ver-food').css("background","#fff2eb");
-            // $('.ver-traffic').css("background","#fff2eb");
-            // $('.ver-fun').css("background","#fff2eb");
-        }
+		var $this = $(this);
+        	var server = $('.server-tab');
+        	server.hide();
+        	var name = ".ser"+$this.attr("class").toString();
+        	$(name).show();
+        	ChangePhoto();
+        	if(name === ".server-football"){
+	            $('.triangle').css("left","23.48%");
+	            $('.ver-football').css("color","#fff");
+	            $('.ver-food').css("color","#b2b2b2");
+	            $('.ver-fun').css("color","#b2b2b2");
+	            $('.ver-traffic').css("color","#b2b2b2");
+	            $('.ver-stay').css("color","#b2b2b2");
+	            $('.ver-football').css("background","#fc3e4c");
+        	}
+       	 if(name === ".server-food" ){
+	            $('.triangle').css("left","36.38%");
+	            $('.ver-food').css("color","#fff");
+	            $('.ver-football').css("color","#b2b2b2");
+	            $('.ver-fun').css("color","#b2b2b2");
+	            $('.ver-traffic').css("color","#b2b2b2");
+	            $('.ver-stay').css("color","#b2b2b2");
+	            $('.ver-food').css("background","#fc3e4c");
+        	}
+        	if(name === ".server-fun"){
+	            $('.triangle').css("left","49.28%");
+	            $('.ver-food').css("color","#b2b2b2");
+	            $('.ver-football').css("color","#b2b2b2");
+	            $('.ver-traffic').css("color","#b2b2b2");
+	            $('.ver-stay').css("color","#b2b2b2");
+	            $('.ver-fun').css("color","#fff");
+	            $('.ver-fun').css("background","#fc3e4c");
+        	}
+        	if(name===".server-traffic"){
+	            $('.triangle').css("left","62.18%");
+	            $('.ver-traffic').css("color","#fff");
+	            $('.ver-food').css("color","#b2b2b2");
+	            $('.ver-football').css("color","#b2b2b2");
+	            $('.ver-fun').css("color","#b2b2b2");
+	            $('.ver-stay').css("color","#b2b2b2");
+	            $('.ver-traffic').css("background","#fc3e4c");
+        	}
+        	if(name === ".server-stay"){
+	            $(".triangle").css("left","75.08%");
+	            $('.ver-stay').css("color","#fff");
+	            $('.ver-food').css("color","#b2b2b2");
+	            $('.ver-football').css("color","#b2b2b2");
+	            $('.ver-traffic').css("color","#b2b2b2");
+	            $('.ver-fun').css("color","#b2b2b2");
+	            $('.ver-stay').css("background","#fc3e4c");
+       	 }
         $('.ver-football').on("mouseover",function() {
             $(".ver-football").css("background-color","#fc3e4c");
             // $(".ver-food").css("background-color","#fff2eb");
@@ -189,44 +99,6 @@ window.onload = function() {
             $(".ver-stay").css("background-color","#decdff");
         });
 })
-
-	var control = 0;
-	$(window).scroll(function(){
-		height = $(window).height();
-		trigger = document.getElementById('trigger').getBoundingClientRect().top < (height*2/3);
-		if(trigger&&control == 0){
-			$('.special img').animate({
-				top: '0'		
-			},1000);
-			$('.special img').css({
-				transform : "rotateY(10deg)",
-				opacity : 1,
-				transition : "transform 2s,opacity 1s"
-			})			
-			jQuery.fn.shake = function(intShakes /*Amount of shakes*/, intDistance /*Shake distance*/, intDuration /*Time duration*/) {
-			    this.each(function() {
-			        var jqNode = $(this);
-			        jqNode.css({position: 'relative'});
-			        for (var x=1; x<=intShakes; x++) {
-			            jqNode.animate({ top: (intDistance * -1) },(((intDuration / intShakes) / 4)))
-			            //.animate({ top: intDistance },((intDuration/intShakes)/2))
-			            .animate({ top: 0 },(((intDuration/intShakes)/4)));
-			        }
-			    });
-			    return this;
-			}	
-			$('.special img').shake(1,12,1000);
-			control = 1;
-		}
-		if(document.getElementById('trigger').getBoundingClientRect().top>=1.2*height){
-			$('.special img').css({
-				opacity : 0,
-				top : "-170px",
-				transform : "rotateY(80deg)"
-			})				
-			control = 0;
-		}
-	})
 	$('.lb, .rt , .rtl, .rtr, #st-sl, .st-br, .st-tr, .st-bl,.st-tl').mouseover(function() {
 		$(this).find('img').css({
 			zIndex : 2,
@@ -250,14 +122,17 @@ window.onload = function() {
 			zIndex : 0
 		});	
 	})
+}
+
 	//导航栏
 	$(window.document).scroll(function() {
 		$(".navbar").addClass("scroll");
-		if($(this).scrollTop() == 0){
+		if($(this).scrollTop() == 0) {
 			$(".navbar").removeClass("scroll");
+			$(".navbar").removeClass("scrollDeepColor");
+		} 
+		if($(this).scrollTop() >= 600) {
+			$(".navbar").removeClass("scroll");
+			$(".navbar").addClass("scrollDeepColor");
 		}
 	});       
-
-
-	
-})

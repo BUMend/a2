@@ -29,17 +29,16 @@ a {
 .card {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
+	padding: 0;
 	height: 12rem;
-/*	background: url(../img/shadow.png) no-repeat 72% 6%;
-	background-size: 50% 177%;*/
 }
 .card img {
-	width: 30%;
+	width: 42%;
 }
 .card span {
 	display: block;
-	margin-top: 3rem;
-	font-size: 1.5rem;
+	margin-top: 2rem;
+	font-size: 2rem;
 }
 /*navbar 导航栏*/
 .navbar {
@@ -61,6 +60,12 @@ a {
 	opacity: 0.7;
 	filter: alpha(opacity=70);
 }
+.scrollDeepColor {
+	background: #222;
+}
+.navbar-nav {
+	margin-right: 15rem;
+}
 /*header 标题页*/
 .header {
 	position: relative;
@@ -69,7 +74,7 @@ a {
 	color: #fff;
 	font-weight: 900;
 	background: url(../img/bg.jpg) no-repeat 50% 50%;
-	background-size: 100% 100%;
+	background-size: 100% 150%;
 	white-space: nowrap;
 }
 .header h1 {
@@ -100,7 +105,7 @@ a {
 }
 .server-nav {
 	padding: 0 17.5%;
-	list-style: none;
+	white-space: nowrap;
 }
 .server-nav li {
 	width: 20%;
@@ -378,12 +383,6 @@ a {
 	bottom: 12px;
 
 }
-/*.long-mask  p{
-	bottom: 12px;
-}
-.high-mask p {
-	bottom: 8px;
-}*/
 .mask a {
 	display: inline-block;
 	width: 10px;
@@ -391,9 +390,6 @@ a {
 	background: #fff;
 	border-radius: 10px;
 
-}
-.mask span {
-/*	letter-spacing: 1px;*/
 }
 /*team 团队介绍板块*/
 .team {
@@ -453,10 +449,15 @@ a {
 }
 /*feature 旅行特色板块*/
 .feature {
-	height: 30rem;
+	height: 25rem;
 	color: #fff;
 	text-align: center;
 	background-color: #f2303e;
+}
+.feature-msg {
+	float: left;
+	width: 100%;
+	padding: 0 19.7%;
 }
 .feature h1 {
 	padding: 1rem 0;
@@ -483,21 +484,20 @@ a {
 /*easy*/
 .easy {
 	margin: 0;
+	padding: 0 19.7%;
 }
 .easy-msg {
 	float: left;
-	position: relative;
-	left: 10%;
-	margin-top: 5rem;
-	margin-bottom: 5rem;
-	width: 80%;
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	width: 100%;
 	background: url(../img/team-bg.png) no-repeat;
-	background-size: 100% 80%;
+	background-size: 100% 100%;
 }
 .easy-word {
 	height: 100%;
 	font-size: 1.5rem;
-    	padding-top: 7rem;
+    	padding-top: 3.5rem;
     	text-align: right;
     	color: #222;
 	background: url(../img/team-til.png) no-repeat 5% 0%;
@@ -510,8 +510,12 @@ a {
 .easy-word p + p {
 	margin: 0;
 }
+.easy-man {
+	margin-bottom: -2rem;
+}
 .easy-man img {
-	margin-bottom: -50px;
+	/*width: 100%;*/
+	width: 85%;
 }
 .easy-title {
 	padding-top: 2rem;
@@ -520,7 +524,7 @@ a {
 	background: #000;
 }
 .easy-title img {
-	width: 50%;
+	width: 40%;
 }
 .easy-title p {
 	float: right;
@@ -529,6 +533,7 @@ a {
 }
 /*contact 联系方式*/
 .contact {
+	padding: 0 19.7%;
 	color: #fff;
 	font-size: 1.3rem;
 	font-weight: 100;
