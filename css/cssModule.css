@@ -93,10 +93,12 @@ a {
 .server {
 	color: white;
 	text-align: center;
+	background:url(../img/zq.jpg) no-repeat;
+	background-size: 100% 100%;
 }
 .server-msg {
 	position: relative;
-	margin-top: -20px;
+	margin-top: -35px;
 }
 .server-nav {
 	padding: 0 17.5%;
@@ -110,19 +112,22 @@ a {
 	float: left;
 
 }
-#tab-list li.active  .fb-tab-btn {
+#tab-list li.active  .fb-tab-btn, #tab-list li.active  .fo-tab-btn ,#tab-list li.active  .fn-tab-btn ,#tab-list li.active  .tf-tab-btn ,#tab-list li.active  .st-tab-btn {
+	color: #fff;
+}
+#tab-list li.active  .fb-tab-btn,#tab-list li.active .fb-tab-btn:hover {
 	background: #fc3e4c;
 }
-#tab-list li.active  .fo-tab-btn {
+#tab-list li.active  .fo-tab-btn ,#tab-list li.active  .fo-tab-btn:hover {
 	background: #fc3e4c;
 }
-#tab-list li.active  .fn-tab-btn {
+#tab-list li.active  .fn-tab-btn,#tab-list li.active  .fn-tab-btn:hover {
 	background: #ffd014;
 }
-#tab-list li.active  .tf-tab-btn {
+#tab-list li.active  .tf-tab-btn ,#tab-list li.active  .tf-tab-btn:hover {
 	background: #37b4fd;
 }
-#tab-list li.active  .st-tab-btn {
+#tab-list li.active  .st-tab-btn,#tab-list li.active  .st-tab-btn:hover {
 	background: #b59ce5;
 }
 #tab-list li .fb-tab-btn,#tab-list li  .fo-tab-btn,#tab-list li  .fn-tab-btn,#tab-list li  .tf-tab-btn,#tab-list li  .st-tab-btn {
@@ -130,9 +135,12 @@ a {
 	border-radius: 0;
 	margin: 0 ;
 }
+#tab-list li .fb-tab-btn:hover ,#tab-list li  .fo-tab-btn:hover ,#tab-list li  .fn-tab-btn:hover ,#tab-list li  .tf-tab-btn:hover ,#tab-list li  .st-tab-btn:hover {
+	color: #fff;
+}
+
 #tab-list li .fb-tab-btn:hover {
 	background: #fc3e4c;
-	color: #fff;
 }
 #tab-list li  .fo-tab-btn:hover {
 	background: #ffca76;	
@@ -154,11 +162,15 @@ a {
 
 .server-msg a {
 	display: inline-block;
+
 	line-height: 3rem;
 	color: #b2b2b2;
 	background: #fff2eb;
 	text-decoration: none;
 	font-size: 1.6rem;
+}
+#tab-list li a {
+	padding: 22px  15px; 
 }
 .server-nav li a:hover {
 /*	background: #ff5a66!important;
@@ -173,6 +185,7 @@ a {
 	color: #fff;
 }*/
 .triangle {
+	display: none;
 	position: absolute;
     	bottom: -10px;
 	width: 0;
@@ -182,6 +195,7 @@ a {
 	border-right: 10px solid transparent;
 }
 #triangle-fb {
+	display: block;
 	left: 23.48%;
 	border-top: 10px solid #fc3e4c;
 	border-left: 10px solid transparent;
@@ -299,7 +313,7 @@ a {
 	overflow: hidden;
 }
 .show-left, .show-right ,#st-sl, #st-ct, #st-sr{
-	margin: 11.77% 0;
+	margin: 9.77% 0;
 }
 .food-arrow {
 	position: relative;
@@ -341,7 +355,7 @@ a {
 		padding: 1rem 0rem 0rem 1rem;
 	}
 	#ft-sl .lt span ,#fo-sl .lt span ,#tf-lt .lt span ,#fun-sl .lt span , .lt span,.st-tr span, #tf-sl .lt span {
-		font-size: 2.0rem;
+		font-size: 1.8rem;
 	}
 	.mask span {
 		font-size: 1.4rem;
@@ -404,7 +418,7 @@ a {
 .lb, .rt , .rtl, .rtr, #st-sl, .st-br, .st-tr, .st-bl,.st-tl {
 	overflow: hidden;
 	position: relative;
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 .food img {
 	position: relative;
@@ -477,12 +491,14 @@ a {
 }
 .team h4 {
 	color: #fc3e4c;
+	font-size: 2.4rem;
+    	font-weight: 100;
 }
 .team img {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: -60px;
-	width: 100%;
+	width: 90%;
 }
 .team-img {
 	padding-top: 7em;
@@ -490,7 +506,7 @@ a {
 .team-word {
 	height: 100%;
 	font-size: 1rem;
-    	padding-top: 7rem;
+    	padding-top: 4rem;
     	text-align: left;
     	color: #222;
 	background: url(../img/team-til.png) no-repeat 90% 0%;
@@ -498,13 +514,20 @@ a {
 }
 .team-word p {
 	margin-top: 2.5rem;
+	font-size: 1.4rem;
+	font-weight: 100;
+	line-height: 1.5;
+}
+.we {
+	font-size: 1.8rem;
+	font-weight: normal;
 }
 .team-word p ~ p {
 	margin: 0;
 }
 .team a {
 	display: block;
-	margin-top: 5rem;
+	margin-top: 3rem;
 	width: 40%;
 	line-height: 3rem;
 	color: #fff;
@@ -516,7 +539,7 @@ a {
 }
 @media screen and (max-width: 1800px) {
 	.team a {
-		margin-top: 10rem;
+		margin-top: 5rem;
 	}
 }
 /*feature 旅行特色板块*/
@@ -614,8 +637,11 @@ a {
 .contact p {
 	margin: 0;
 	padding: 4rem 0 4rem 12rem;
-	border-left: 5px solid #fc3e4c;
+	border-left: 5px solid transparent;
 	text-align: left;
+}
+.contact p:hover {
+	border-left: 5px solid #fc3e4c;
 }
 .contact-phone {
 	background: url(../img/con-1.png) no-repeat 10% 50%;

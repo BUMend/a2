@@ -16,12 +16,49 @@ window.onload = function() {
             $(window).on('resize',function() {
                 ChangePhoto();
             });
-            $('#tab-list').click(function (e) { 
-
+            $('#tab-list a').on("click",function (e) { 
+	  e.preventDefault();
+	  $(this).tab("show");
 	  ChangePhoto();
+	  if($("#football-tab").css("display")==="block"){
+	  	$(".server").css("background","url(img/zq.jpg) no-repeat");
+	  	$(".server").css("background-size","cover")
+	  	$("#triangle-fb").css("display","block");
+	  	console.log($("#triangle-fb").css("display"));
+	  }else{
+	  	$("#triangle-fb").css("display","none");
+	  }	  	
+	  if($("#food-tab").css("display")==="block"){
+	  	$(".server").css("background","url(img/foodbg.jpg) no-repeat");
+	  	$(".server").css("background-size","cover")
+	  	$("#triangle-fo").css("display","block");
+	  }else{
+	  	$("#triangle-fo").css("display","none");
+	  }	
+	  if($("#fun-tab").css("display")==="block"){
+	  	$(".server").css("background","url(img/bg-fun.jpg) no-repeat");
+	  	$(".server").css("background-size","cover")
+	  	$("#triangle-fn").css("display","block");
+	  }else{
+	  	$("#triangle-fn").css("display","none");
+	  }	
+	  if($("#traffic-tab").css("display")==="block"){
+	  	$(".server").css("background","url(img/tf-bg.jpg) no-repeat");
+	  	$(".server").css("background-size","cover")
+	  	$("#triangle-tf").css("display","block");
+	  }else{
+	  	$("#triangle-tf").css("display","none");
+	  }	
+	  if($("#stay-tab").css("display")==="block"){
+	  	$(".server").css("background","url(img/bg-st.jpg) no-repeat");
+	  	$(".server").css("background-size","cover")
+	  	$("#triangle-st").css("display","block");
+	  }else{
+	  	$("#triangle-st").css("display","none");
+	  }	
              }) ;
 		
-            $("li.active").find("")
+            // $("li.active").find("")
 
 // 	$('.server-msg a').on("click",function(){
 // 		// var $this = $(this);
