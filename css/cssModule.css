@@ -34,6 +34,8 @@ a {
 }
 .card img {
 	width: 42%;
+	box-shadow: 10px 10px 15px rgba(0,0,0,.1);
+	border-radius: 50%;
 }
 .card span {
 	display: block;
@@ -44,11 +46,11 @@ a {
 .navbar {
 	min-height: 0;
 	border: none;
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 	background: transparent;
 }
 .navbar .navbar-right a {
-	padding: 5px 30px;
+	padding: 19px 30px;
 	border-bottom: 3px solid transparent;
 }
 .navbar .navbar-right a:hover {
@@ -89,11 +91,15 @@ a {
 }
 .header span {
 	float: left;
-	margin-top: 3rem;
+	margin-top: 1rem;
 	font-size: 2rem;
 	text-align: center;
 } 
-
+.header-warp {
+	float: left;
+	width: 100%;
+	padding: 0 30%;
+}
 /*server 旅游产品版块*/
 .server {
 	color: white;
@@ -107,6 +113,7 @@ a {
 }
 .server-nav {
 	padding: 0 17.5%;
+	border: none;
 	white-space: nowrap;
 }
 .server-nav li {
@@ -123,7 +130,7 @@ a {
 	background: #fc3e4c;
 }
 #tab-list li.active  .fo-tab-btn ,#tab-list li.active  .fo-tab-btn:hover {
-	background: #fc3e4c;
+	background: #fc3e2c;
 }
 #tab-list li.active  .fn-tab-btn,#tab-list li.active  .fn-tab-btn:hover {
 	background: #ffd014;
@@ -355,6 +362,9 @@ a {
 	.mask span {
 		font-size: 1.4rem;
 	}
+	.feature a {
+		width: 9%;
+	}
 }
 /* 小屏幕 */
 @media all and (max-width: 1024px) {
@@ -386,6 +396,7 @@ a {
 	.mask span {
 		font-size: 1.4rem;
 	}
+	
 }
 .lb {
 	height: 50%;
@@ -460,13 +471,13 @@ a {
 	height: 10px;
 	background: #fff;
 	border-radius: 10px;
-
 }
 /*team 团队介绍板块*/
 .team {
 	width: 100%;
 	margin: 0;
-	padding: 15rem 19.7%;
+	padding: 9rem 19.7%;
+	padding-bottom: 15rem;
 }
 .team-msg {
 	float: left;
@@ -522,6 +533,10 @@ a {
 	background: #f2303e;
 	white-space: nowrap; 
 }
+.team a:hover {
+	text-decoration: none;
+	cursor: default;
+}
 @media screen and (max-width: 1800px) {
 	.team a {
 		margin-top: 5rem;
@@ -546,14 +561,13 @@ a {
 .feature a {
 	display: block;
 	margin: 0 auto;
-	width: 25%;
+	width: 15%;
 	line-height: 1.5;
 	border: 1px solid #fff;
 	border-radius: 20px;
 	color: #fff;
 	font-size: 1.5rem;
 	text-decoration: none;
-
 }
 .feature p {
 	padding: 3rem;
@@ -594,7 +608,6 @@ a {
 	margin-bottom: -2rem;
 }
 .easy-man img {
-	/*width: 100%;*/
 	width: 85%;
 }
 .easy-title {
@@ -610,15 +623,21 @@ a {
 	float: right;
 	margin-top: 2rem;
 	padding-left: 2rem;
+	width: 100%;
+	font-size: 1.8rem;
+}
+.easy-title p + p {
+	margin-top: 0;
 }
 /*contact 联系方式*/
 .contact {
 	padding: 0 19.7%;
+	border-bottom: 3rem solid #000;
 	color: #fff;
-	font-size: 1.3rem;
+	font-size: 1.8rem;
 	font-weight: 100;
 	background: url(../img/contact-bg.jpg) no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 	text-align: right;
 }
 .contact ul {
@@ -633,6 +652,7 @@ a {
 	padding: 4rem 0 4rem 12rem;
 	border-left: 5px solid transparent;
 	text-align: left;
+	white-space: break-word;
 }
 .contact p:hover {
 	border-left: 5px solid #fc3e4c;
@@ -651,4 +671,5 @@ a {
 }
 .contact-address span {
 	display: block;
+	line-height: 1.4;
 }
