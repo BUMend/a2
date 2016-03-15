@@ -19,202 +19,378 @@
   </head>
   <body>
     <div class="container">
+
       <!-- 导航栏 -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">首页</a></li>
+              <li><a href="#server">产品</a></li>
+              <li><a href="#team">关于我们</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
       <!-- 导航栏 结束-->
 
-      <!-- 首页 -->
-      <div class="header row">
-            <h1></h1>
-            <span class="col-xs-12 col-sm-2 col-sm-offset-3 col-md-2 col-md-offset-3 col-lg-2 col-lg-offset-2">完美的体验</span>
-            <span class="col-xs-12 col-sm-2 col-md-2 col-lg-3">专属的定制</span>
-            <span class="col-xs-12 col-sm-2 col-md-2 col-lg-3">深度的目的地</span>
-      </div>
-      <!-- 首页 结束-->
 
-      <!-- 旅游产品 -->
-      <div class="server row">
-        <div class="server-msg">
-          <!-- 5个产品选项 -->
-          <a class="ver-football col-xs-2 col-xs-offset-1 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1" href="javascript:void(0)">足球主题旅游</a>
-          <a class="ver-food col-xs-2 col-sm-2 col-md-2" href="javascript:void(0)">美食主题旅游</a>
-          <a class="ver-fun col-xs-2 col-sm-2 col-md-2" href="javascript:void(0)">当地游玩</a>
-          <a class="ver-traffic col-xs-2 col-sm-2 col-md-2" href="javascript:void(0)">目的地交通</a>
-          <a class="ver-stay col-xs-2 col-sm-2 col-md-2" href="javascript:void(0)">特色住宿</a>
-           <!-- 5个产品选项 结束-->
-           <div class="triangle"></div>
-        </div>
-        <!-- 产品内容模块 -->
-        <div class="server-content">
-          <!-- 足球主题旅游 -->
-         <div class="server-football server-tab">
-            <div class="food">
-                <div class="show-left" id="ft-sl">
-                    <div class="lt">
-                      <span>亲身体验西班牙</span>
-                      <span>的美酒与</span>
-                      <span>点心</span>
-                    </div>
-                    <div class="lb">
-                        <img src="img/food6.jpg" alt="">
-                    </div>
+          <!-- 首页 -->
+          <div class="header row">
+                <h1></h1>
+                <div class="header-warp">
+                  <span class="col-xs-12 col-sm-12 col-md-12 col-lg-4">完美的体验</span>
+                  <span class="col-xs-12 col-sm-12 col-md-12 col-lg-4">专属的定制</span>
+                  <span class="col-xs-12 col-sm-12 col-md-12 col-lg-4">深度的目的地</span>
                 </div>
-                <div class="show-right" id="ft-sr">
-                    <div class="rt">
-                        <img src="img/food1.jpg" alt="">
-                    </div>
-                    <div class="rtl">
-                        <img src="img/foo3.jpg" alt="">
-                    </div>
-                    <div class="rtr">
-                        <img src="img/food7.jpg" alt="">
-                    </div>
-                </div>  
-            </div>
-         </div>
-         <!-- 足球主题旅行结束 -->
-
-        <!-- 美食主题旅游 -->
-         <div class="server-food server-tab" >
-            <div class="food">
-                <div class="show-left" id="fo-sl">
-                    <div class="lt">
-                      <span>亲身体验西班牙</span>
-                      <span>的美酒与</span>
-                      <span>点心</span>
-                    </div>
-                    <div class="lb">
-                        <img src="img/food6.jpg" alt="">
-                    </div>
-                </div>
-                <div class="show-right" id="fo-sr">
-                    <div class="rt">
-                        <img src="img/food1.jpg" alt="">
-                    </div>
-                    <div class="rtl">
-                        <img src="img/foo3.jpg" alt="">
-                    </div>
-                    <div class="rtr">
-                        <img src="img/food7.jpg" alt="">
-                    </div>
-                </div>  
-            </div>
           </div>
-          <!-- 美食主题旅行结束 -->
+          <!-- 首页 结束-->
 
-          <!-- 当地玩乐 -->
-          <div class="server-fun server-tab">
-            <div class="food">
-                <div class=" show-right" id="fun-sr">
-                    <div class="rt">
-                        <img src="img/fun-lt.jpg" alt="">
-                    </div>
-                    <div class="rtr">
-                        <img src="img/fun-ll.jpg" alt="">
-                    </div>
-                    <div class="rtl">
-                        <img src="img/fun-lr.jpg" alt="">
-                    </div>                   
-                </div>  
-                <div class="show-left" id="fun-sl" >
-                    <div class="lt">
-                      <span>一站式的专车服务</span>
-                      <span> 司机还是专业的</span>
-                      <span> 当地向导</span>
-                      <span> 当地向导</span>
-                    </div>
-                    <div class="lb">
-                        <img src="img/fun-rb.jpg" alt="">
-                    </div>
+          <!-- 旅游产品 -->
+          <div class="server row" id="server">
+                <div class="server-msg">
+                    <!-- 5个产品选项 -->
+                    <ul class="server-nav nav nav-tabs" role="tab-list" id="tab-list">
+                            <li class="active" role="presentation">
+                                  <a class="fb-tab-btn" href="#football-tab"  aria-controls="football-tab" role="tab" data-toggle="tab">
+                                    足球深度游
+                                  </a>
+                            </li>
+                            <li class="" role="presentation">
+                                  <a class="fo-tab-btn" href="#food-tab" aria-controls="food-tab" role="tab" data-toggle="tab">
+                                    美食深度游
+                                  </a>
+                            </li>
+                            <li class=""  role="presentation">
+                                  <a class="fn-tab-btn" href="#fun-tab" aria-controls="fun-tab" role="tab" data-toggle="tab">
+                                    当地游玩
+                                  </a>
+                            </li>
+                            <li class="" role="presentation" >
+                                  <a class="tf-tab-btn" href="#traffic-tab" aria-controls="traffic-tab" role="tab" data-toggle="tab">
+                                    目的地交通
+                                  </a>
+                            </li>
+                            <li class="" role="presentation">
+                                  <a class="st-tab-btn" href="#stay-tab" aria-controls="stay-tab" role="tab" data-toggle="tab">
+                                    特色住宿
+                                  </a>
+                            </li>
+                    </ul>
+                     <div class="triangle" id="triangle-fb"></div>
+                     <div class="triangle" id="triangle-fo"></div>
+                     <div class="triangle" id="triangle-fn"></div>
+                     <div class="triangle" id="triangle-tf"></div>
+                     <div class="triangle" id="triangle-st"></div>
+
                 </div>
-            </div>
+                  <!-- 产品内容模块 -->
+                <div class="server-content tab-content">
+                        <!-- 足球主题旅游 -->
+                      <div class="server-football  server-tab tab-pane active" id="football-tab" role="tabpanel">
+                            <div class="food">
+                                <div class="show-left" id="ft-sl">
+                                    <div class="lt">
+                                      <span>定制最专业的</span>
+                                      <span>看球之旅</span>
+                                      <span></span>
+                                    </div>
+                                    <div class="lb">
+                                        <img src="img/fb-lb.jpg" alt="">
+                                        <div class="mask">
+                                            <p>
+                                                <a href="javascript:0;"></a>
+                                                <span>西班牙足球队员</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="show-right" id="ft-sr">
+                                    <div class="rt">
+                                        <img src="img/fb-rt.jpg" alt="">
+                                        <div class="long-mask mask">
+                                            <p>
+                                                <a href="javascript:0;"></a>
+                                                <span>足球观战团</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="rtl">
+                                        <img src="img/fb-rl.jpg" alt="">
+                                        <div class="mask">
+                                            <p>
+                                                <a href="javascript:0;"></a>
+                                                <span>足球青训营</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="rtr">
+                                        <img src="img/fb-rr.jpg" alt="">
+                                        <div class="mask">
+                                            <p>
+                                                <a href="javascript:0;"></a>
+                                                <span>巴塞罗那</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                      </div>
+                       <!-- 足球主题旅行结束 -->
+
+                      <!-- 美食主题旅游 -->
+                      <div class="server-food server-tab tab-pane" id="food-tab" role="tabpanel" class="" >
+                          <div class="food">
+                              <div class="show-left" id="fo-sl">
+                                  <div class="lt">
+                                    <span>亲身体验西班牙</span>
+                                    <span>的美酒与</span>
+                                    <span>点心</span>
+                                  </div>
+                                  <div class="lb">
+                                      <img src="img/fod.jpg" alt="">
+                                      <div class="mask">
+                                          <p>
+                                              <a href="javascript:0;"></a>
+                                              <span>特色小食</span>
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="show-right" id="fo-sr">
+                                  <div class="rt">
+                                      <img src="img/food1.jpg" alt="">
+                                      <div class="long-mask mask">
+                                          <p>
+                                              <a href="javascript:0;"></a>
+                                              <span>西班牙特色蛋糕</span>
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="rtl">
+                                      <img src="img/foo3.jpg" alt="">
+                                      <div class="mask">
+                                          <p>
+                                              <a href="javascript:0;"></a>
+                                              <span>西班牙海鲜饭</span>
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="rtr">
+                                      <img src="img/food7.jpg" alt="">
+                                      <div class="mask">
+                                          <p>
+                                              <a href="javascript:0;"></a>
+                                              <span>西班牙火腿</span>
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>  
+                          </div>
+                      </div>
+                        <!-- 美食主题旅行结束 -->
+
+                        <!-- 当地玩乐 -->
+                      <div class="server-fun server-tab tab-pane" id="fun-tab" role="tabpanel" >
+                          <div class="food">
+                              <div class=" show-right" id="fun-sr">
+                                  <div class="rt">
+                                      <img src="img/fun-lt.jpg" alt="">
+                                      <div class="long-mask mask">
+                                          <p>
+                                              <a href="javascript:0;"></a>
+                                              <span>登山观景</span>
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="rtr">
+                                      <img src="img/fun-ll.jpg" alt="">
+                                      <div class="mask">
+                                          <p>
+                                              <a href="javascript:0;"></a>
+                                              <span>西班牙西红柿节</span>
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="rtl">
+                                      <img src="img/fun-lr.jpg" alt="">
+                                      <div class="mask">
+                                          <p>
+                                              <a href="javascript:0;"></a>
+                                              <span>圣胡安节 </span>
+                                          </p>
+                                      </div>
+                                  </div>                   
+                              </div>  
+                              <div class="show-left" id="fun-sl" >
+                                  <div class="lt">
+                                    <span> 真真切切体验</span>
+                                    <span> 不一样的</span>
+                                    <span> 西班牙</span>
+                                    <span> </span>
+                                  </div>
+                                  <div class="lb">
+                                      <img src="img/fun-rb.jpg" alt="">
+                                      <div class="mask">
+                                          <p>
+                                              <a href="javascript:0;"></a>
+                                              <span>莱昂Leon</span>
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                        <!-- 玩乐结束 -->
+
+                      <!-- 交通模块 -->
+                      <div class="server-traffic server-tab tab-pane" id="traffic-tab" role="tabpanel">
+                            <div class="food">
+                                <div class="show-left" id="tf-sl" >
+                                    <div class="lt">
+                                      <span>一站式的专车服务</span>
+                                      <span> 司机还是专业的</span>
+                                      <span> 当地向导</span>
+                                    </div>
+                                    <div class="lb">
+                                        <img src="img/tf-lb.jpg" alt="">
+                                        <div class="mask">
+                                            <p>
+                                                <a href="javascript:0;"></a>
+                                                <span>亲子自驾</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" show-right" id="tf-sr">
+                                    <div class="rt">
+                                        <img src="img/tf-rt.jpg" alt="">
+                                        <div class="long-mask mask">
+                                            <p>
+                                                <a href="javascript:0;"></a>
+                                                <span> 主题自驾路线 </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="rtl">
+                                        <img src="img/tf-rl.jpg" alt="">
+                                        <div class="mask">
+                                            <p>
+                                                <a href="javascript:0;"></a>
+                                                <span>房车自驾 </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="rtr">
+                                        <img src="img/tf-rr.jpg" alt="">
+                                        <div class="mask">
+                                            <p>
+                                                <a href="javascript:0;"></a>
+                                                <span>城市自驾</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                      </div>
+                      <!-- 交通模块结束 -->
+
+                      <!-- 特色住宿模块 -->
+                      <div class="server-stay server-tab tab-pane" id="stay-tab" role="tabpanel" >
+                          <div class="food">
+                              <div id="st-sl" >
+                                      <img src="img/bg-st-l.jpg" alt="">
+                                      <div class="high-mask mask">
+                                          <p>
+                                              <a href="javascript:0;"></a>
+                                              <span>古堡旅店</span>
+                                          </p>
+                                      </div>
+                              </div>
+                              <div id="st-ct">
+                                  <div class="st-tl">
+                                      <img src="img/bg-st-tl.jpg" alt="">
+                                      <div class="mask">
+                                          <p>
+                                              <a href="javascript:0;"></a>
+                                              <span>午后小息</span>
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="st-br">
+                                      <img src="img/bg-st-bl.jpg" alt="">
+                                      <div class="long-mask mask">
+                                          <p>
+                                              <a href="javascript:0;"></a>
+                                              <span>阳光浴平台</span>
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div id="st-sr">
+                                  <div class="st-tr">
+                                    <span>最原汁原味的</span>
+                                    <span> 当地住宿</span>
+                                    <span> 体验</span>
+                                  </div>                  
+                                  <div class="st-bl">
+                                      <img src="img/bg-st-sb.jpg" alt="">
+                                      <div class="long-mask mask">
+                                          <p>
+                                              <a href="javascript:0;"></a>
+                                              <span>乡间别墅</span>
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>  
+                          </div>         
+                      </div>
+                      <!-- 特色住宿模块 结束 -->        
+                </div>
+                  <!-- 产品内容模块 结束-->
+          </div>        
+          <!-- 旅游产品 结束-->
+
+
+
+            
+              <!--   团队介绍-->
+          <div class="team row" id="team">
+                <div class="team-msg">
+                  <div class="team-img col-xs-5 col-sm-5 col-md-5">
+                    <img src="img/team.png" alt="">
+                  </div>
+                  <div class="team-word col-xs-7 col-sm-7 col-md-7">
+                    <h4>团队介绍</h4>
+                    <p><span class="we">我们是</span></p>
+                    <p>由足球狂热分子、马拉松跑者、资深记者、高尔夫超级玩家组成，</p>
+                    <p>随时随地为你服务</p>
+                    <p>与你分享最优质最特色的当地旅游体验产品</p>
+                    <p>提供最原汁原味的西班牙旅行体验</p>
+                    <a href="javascript:void(0)">让我们一起玩转西班牙!</a>
+                  </div>   
+                </div>
           </div>
-          <!-- 玩乐结束 -->
-
-        <!-- 交通模块 -->
-        <div class="server-traffic server-tab">
-            <div class="food">
-                <div class="show-left" id="tf-sl" >
-                    <div class="lt">
-                      <span>一站式的专车服务</span>
-                      <span> 司机还是专业的</span>
-                      <span> 当地向导</span>
-                    </div>
-                    <div class="lb">
-                        <img src="img/food6.jpg" alt="">
-                    </div>
-                </div>
-                <div class=" show-right" id="tf-sr">
-                    <div class="rt">
-                        <img src="img/food1.jpg" alt="">
-                    </div>
-                    <div class="rtl">
-                        <img src="img/foo3.jpg" alt="">
-                    </div>
-                    <div class="rtr">
-                        <img src="img/food7.jpg" alt="">
-                    </div>
-                </div>  
-            </div>
-        </div>
-        <!-- 交通模块结束 -->
-
-        <!-- 特色住宿模块 -->
-        <div class="server-stay server-tab">
-            <div class="food">
-                <div id="st-sl" >
-                        <img src="img/bg-st-l.jpg" alt="">
-                </div>
-                <div id="st-ct">
-                    <div class="st-tl">
-                        <img src="img/bg-st-tl.jpg" alt="">
-                    </div>
-                    <div class="st-br">
-                        <img src="img/bg-st-sb.jpg" alt="">
-                    </div>
-                </div>
-                <div id="st-sr">
-                     <div class="st-tr">
-                        sssss
-                    </div>                  
-                    <div class="st-bl">
-                        <img src="img/bg-st-bl.jpg" alt="">
-                    </div>
-                </div>  
-            </div>         
-        </div>
-        <!-- 特色住宿模块 结束 -->
-        </div>
-
-        <!-- 产品内容模块 结束-->
-
-      </div>
-      <!-- 旅游产品 结束-->
-        
-      <!--   团队介绍-->
-      <div class="team row">
-        <div class="team-msg">
-          <div class="team-img col-xs-5 col-sm-5 col-md-5">
-            <img src="img/team.png" alt="">
-          </div>
-          <div class="team-word col-xs-7 col-sm-7 col-md-7">
-            <h4>团队介绍</h4>
-            <p>我们是</p>
-            <p>由足球狂热分子、马拉松跑者、资深记者、高尔夫超级玩家组成，</p>
-            <p>随时随地为你服务</p>
-            <p>与你分享最优质最特色的当地旅游体验产品</p>
-            <p>提供最原汁原味的西班牙旅行体验</p>
-            <a href="">让我们一起玩转西班牙!</a>
-          </div>   
-        </div>
-      </div>
-      <!-- 团队介绍结束结束 -->
+              <!-- 团队介绍结束结束 -->
 
       <!-- 旅行产品特色 -->
       <div class="feature row">
         <h1 id="trigger">
           <a href="">兔儿旅行的优势</a>
         </h1>
-        <div class="col-xs-4 col-sm-4 col-md-4 card">
+        <div class="feature-msg">
+           <div class="col-xs-4 col-sm-4  col-md-4 card">
             <img src="img/1.png" alt="">
             <span>深度的体验</span>
           </div>
@@ -226,25 +402,33 @@
             <img src="img/3.png" alt="">
             <span>贴心的服务</span>
           </div>
+        </div>
+       
       </div>
       <!-- 旅游产品特色结束 -->
       
       <!--   简单介绍-->
-      <!-- <div class="easy row">
+      <div class="easy row">
         <div class="easy-msg">
-          <div class="easy-word col-xs-7 col-sm-7 col-md-7">
-            <p>重新整合西班牙上游目的地旅游资源打造最具竞争力的目的地旅游产品</p>
+          <div class="easy-word col-xs-6 col-sm-6 col-md-6">
+            <p>重新整合西班牙上游目的地旅游资源</p>
+            <p>打造最具竞争力的目的地旅游产品</p>
           </div>
-          <div class="col-xs-5 col-sm-5 col-md-5">
-            <img src="img/5.png" alt="">
+          <div class="easy-man col-xs-6 col-sm-6 col-md-6">
+            <img src="img/ren.png" alt="">
           </div>
         </div>
-      </div> -->
-      <!-- 简单介绍结束 -->
+        <div class="easy-title col-xs-8 col-sm-8 col-md-6">
+          <img src="img/talk.png" alt="">
+          <p>Guangzhou Yatu Information Technology Co., Ltd.
+          </p>
+          <p>广州雅途信息科技有限公司</p>
+        </div>
+       </div> 
 
       <!-- 联系方式 -->
       <div class="contact row">
-          <ul class="col-xs-6 col-sm-5 col-md-4 col-md-offset-2">
+          <ul class="col-xs-8 col-sm-8 col-md-6">
             <li>
               <p class="contact-phone">180-199-9262</p>
             </li>
@@ -272,7 +456,7 @@
     <script src="js/jquery-1.9.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/food.js"></script>
     <script src="js/tur4u.js"></script>
+
   </body>
 </html>
