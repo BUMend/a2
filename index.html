@@ -59,81 +59,86 @@
           <div class="server row">
                 <div class="server-msg">
                     <!-- 5个产品选项 -->
-                    <ul class="server-nav nav nav-tab">
-                            <li class="football-btn ">
-                                  <a class="ver-football fo-active" href="javascript:0;">
+                    <ul class="server-nav nav nav-tabs" role="tab-list" id="tab-list">
+                            <li class="active" role="presentation">
+                                  <a class="fb-tab-btn" href="#football-tab"  aria-controls="football-tab" role="tab" data-toggle="tab">
                                     足球深度游
                                   </a>
                             </li>
-                            <li class="food-btn">
-                                  <a class="ver-food" href="javascript:0;">
+                            <li class="" role="presentation">
+                                  <a class="fo-tab-btn" href="#food-tab" aria-controls="food-tab" role="tab" data-toggle="tab">
                                     美食深度游
                                   </a>
                             </li>
-                            <li class="fun-btn" >
-                                  <a class="ver-fun" href="javascript:0;">
+                            <li class=""  role="presentation">
+                                  <a class="fn-tab-btn" href="#fun-tab" aria-controls="fun-tab" role="tab" data-toggle="tab">
                                     当地游玩
                                   </a>
                             </li>
-                            <li class="traffic-btn" >
-                                  <a class="ver-traffic" href="javascript:0;">
+                            <li class="" role="presentation" >
+                                  <a class="tf-tab-btn" href="#traffic-tab" aria-controls="traffic-tab" role="tab" data-toggle="tab">
                                     目的地交通
                                   </a>
                             </li>
-                            <li class="stay-btn">
-                                  <a class="ver-stay" href="javascript:0;">
+                            <li class="" role="presentation">
+                                  <a class="st-tab-btn" href="#stay-tab" aria-controls="stay-tab" role="tab" data-toggle="tab">
                                     特色住宿
                                   </a>
                             </li>
                     </ul>
-                     <div class="triangle"></div>
+                     <div class="triangle" id="triangle-fb"></div>
+                     <div class="triangle" id="triangle-fo"></div>
+                     <div class="triangle" id="triangle-fn"></div>
+                     <div class="triangle" id="triangle-tf"></div>
+                     <div class="triangle" id="triangle-st"></div>
+
                 </div>
                   <!-- 产品内容模块 -->
-                <div class="server-content">
+                <div class="server-content tab-content">
                         <!-- 足球主题旅游 -->
-                      <div class="server-football  server-tab" >
+                      <div class="server-football  server-tab tab-pane active" id="football-tab" role="tabpanel">
                             <div class="food">
                                 <div class="show-left" id="ft-sl">
                                     <div class="lt">
-                                      <span>亲身体验西班牙</span>
-                                      <span>的美酒与</span>
-                                      <span>点心</span>
+                                      <span>定制最专业的</span>
+                                      <span>看球之旅</span>
+                                      <span></span>
                                     </div>
                                     <div class="lb">
-                                        <img src="img/food6.jpg" alt="">
+                                        <img src="img/fb-lb.jpg" alt="">
                                         <div class="mask">
                                             <p>
                                                 <a href="javascript:0;"></a>
-                                                <span>测试测试测试</span>
+                                                <span>西班牙足球队员</span>
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="show-right" id="ft-sr">
                                     <div class="rt">
-                                        <img src="img/food1.jpg" alt="">
+                                        <img src="img/fb-rt.jpg" alt="">
                                         <div class="long-mask mask">
                                             <p>
                                                 <a href="javascript:0;"></a>
-                                                <span>测试测试测试</span>
+                                                <span>足球观战团</span>
                                             </p>
                                         </div>
                                     </div>
                                     <div class="rtl">
-                                        <img src="img/foo3.jpg" alt="">
+                                        <img src="img/fb-rl.jpg" alt="">
                                         <div class="mask">
                                             <p>
                                                 <a href="javascript:0;"></a>
-                                                <span>测试测试测试</span>
+                                                <span>足球青训营</span>
                                             </p>
                                         </div>
                                     </div>
                                     <div class="rtr">
-                                        <img src="img/food7.jpg" alt="">
+                                        <img src="img/fb-rr.jpg" alt="">
                                         <div class="mask">
                                             <p>
                                                 <a href="javascript:0;"></a>
-                                                <span>测试测试测试</span>
+                                                <span>巴塞罗那</span>
                                             </p>
                                         </div>
                                     </div>
@@ -143,7 +148,7 @@
                        <!-- 足球主题旅行结束 -->
 
                       <!-- 美食主题旅游 -->
-                      <div class="server-food server-tab" >
+                      <div class="server-food server-tab tab-pane" id="food-tab" role="tabpanel" class="" >
                           <div class="food">
                               <div class="show-left" id="fo-sl">
                                   <div class="lt">
@@ -152,11 +157,11 @@
                                     <span>点心</span>
                                   </div>
                                   <div class="lb">
-                                      <img src="img/food6.jpg" alt="">
+                                      <img src="img/fod.jpg" alt="">
                                       <div class="mask">
                                           <p>
                                               <a href="javascript:0;"></a>
-                                              <span>测试测试测试</span>
+                                              <span>特色小食</span>
                                           </p>
                                       </div>
                                   </div>
@@ -167,7 +172,7 @@
                                       <div class="long-mask mask">
                                           <p>
                                               <a href="javascript:0;"></a>
-                                              <span>测试测试测试</span>
+                                              <span>西班牙特色蛋糕</span>
                                           </p>
                                       </div>
                                   </div>
@@ -176,7 +181,7 @@
                                       <div class="mask">
                                           <p>
                                               <a href="javascript:0;"></a>
-                                              <span>测试测试测试</span>
+                                              <span>西班牙海鲜饭</span>
                                           </p>
                                       </div>
                                   </div>
@@ -185,7 +190,7 @@
                                       <div class="mask">
                                           <p>
                                               <a href="javascript:0;"></a>
-                                              <span>测试测试测试</span>
+                                              <span>西班牙火腿</span>
                                           </p>
                                       </div>
                                   </div>
@@ -195,7 +200,7 @@
                         <!-- 美食主题旅行结束 -->
 
                         <!-- 当地玩乐 -->
-                      <div class="server-fun server-tab" >
+                      <div class="server-fun server-tab tab-pane" id="fun-tab" role="tabpanel" >
                           <div class="food">
                               <div class=" show-right" id="fun-sr">
                                   <div class="rt">
@@ -203,7 +208,7 @@
                                       <div class="long-mask mask">
                                           <p>
                                               <a href="javascript:0;"></a>
-                                              <span>测试测试测试</span>
+                                              <span>登山观景</span>
                                           </p>
                                       </div>
                                   </div>
@@ -212,7 +217,7 @@
                                       <div class="mask">
                                           <p>
                                               <a href="javascript:0;"></a>
-                                              <span>测试测试测试</span>
+                                              <span>西班牙西红柿节</span>
                                           </p>
                                       </div>
                                   </div>
@@ -221,24 +226,24 @@
                                       <div class="mask">
                                           <p>
                                               <a href="javascript:0;"></a>
-                                              <span>测试测试测试</span>
+                                              <span>圣胡安节 </span>
                                           </p>
                                       </div>
                                   </div>                   
                               </div>  
                               <div class="show-left" id="fun-sl" >
                                   <div class="lt">
-                                    <span>一站式的专车服务</span>
-                                    <span> 司机还是专业的</span>
-                                    <span> 当地向导</span>
-                                    <span> 当地向导</span>
+                                    <span> 真真切切体验</span>
+                                    <span> 不一样的</span>
+                                    <span> 西班牙</span>
+                                    <span> </span>
                                   </div>
                                   <div class="lb">
                                       <img src="img/fun-rb.jpg" alt="">
                                       <div class="mask">
                                           <p>
                                               <a href="javascript:0;"></a>
-                                              <span>测试测试测试</span>
+                                              <span>莱昂Leon</span>
                                           </p>
                                       </div>
                                   </div>
@@ -248,7 +253,7 @@
                         <!-- 玩乐结束 -->
 
                       <!-- 交通模块 -->
-                      <div class="server-traffic server-tab" >
+                      <div class="server-traffic server-tab tab-pane" id="traffic-tab" role="tabpanel">
                             <div class="food">
                                 <div class="show-left" id="tf-sl" >
                                     <div class="lt">
@@ -300,14 +305,14 @@
                       <!-- 交通模块结束 -->
 
                       <!-- 特色住宿模块 -->
-                      <div class="server-stay server-tab">
+                      <div class="server-stay server-tab tab-pane" id="stay-tab" role="tabpanel" >
                           <div class="food">
                               <div id="st-sl" >
                                       <img src="img/bg-st-l.jpg" alt="">
                                       <div class="high-mask mask">
                                           <p>
                                               <a href="javascript:0;"></a>
-                                              <span>测试测试测试</span>
+                                              <span>古堡旅店</span>
                                           </p>
                                       </div>
                               </div>
@@ -317,32 +322,32 @@
                                       <div class="mask">
                                           <p>
                                               <a href="javascript:0;"></a>
-                                              <span>测试测试测试</span>
+                                              <span>午后小息</span>
                                           </p>
                                       </div>
                                   </div>
                                   <div class="st-br">
-                                      <img src="img/bg-st-sb.jpg" alt="">
+                                      <img src="img/bg-st-bl.jpg" alt="">
                                       <div class="long-mask mask">
                                           <p>
                                               <a href="javascript:0;"></a>
-                                              <span>测试测试测试</span>
+                                              <span>阳光浴平台</span>
                                           </p>
                                       </div>
                                   </div>
                               </div>
                               <div id="st-sr">
                                   <div class="st-tr">
-                                    <span>一站式的专车服务</span>
-                                    <span> 司机还是专业的</span>
-                                    <span> 当地向导</span>
+                                    <span>最原汁原味的</span>
+                                    <span> 当地住宿</span>
+                                    <span> 体验</span>
                                   </div>                  
                                   <div class="st-bl">
-                                      <img src="img/bg-st-bl.jpg" alt="">
+                                      <img src="img/bg-st-sb.jpg" alt="">
                                       <div class="long-mask mask">
                                           <p>
                                               <a href="javascript:0;"></a>
-                                              <span>测试测试测试</span>
+                                              <span>乡间别墅</span>
                                           </p>
                                       </div>
                                   </div>
@@ -358,24 +363,24 @@
 
 
             
-          <!--   团队介绍-->
+              <!--   团队介绍-->
           <div class="team row">
-            <div class="team-msg">
-              <div class="team-img col-xs-5 col-sm-5 col-md-5">
-                <img src="img/team.png" alt="">
-              </div>
-              <div class="team-word col-xs-7 col-sm-7 col-md-7">
-                <h4>团队介绍</h4>
-                <p>我们是</p>
-                <p>由足球狂热分子、马拉松跑者、资深记者、高尔夫超级玩家组成，</p>
-                <p>随时随地为你服务</p>
-                <p>与你分享最优质最特色的当地旅游体验产品</p>
-                <p>提供最原汁原味的西班牙旅行体验</p>
-                <a href="">让我们一起玩转西班牙!</a>
-              </div>   
-            </div>
+                <div class="team-msg">
+                  <div class="team-img col-xs-5 col-sm-5 col-md-5">
+                    <img src="img/team.png" alt="">
+                  </div>
+                  <div class="team-word col-xs-7 col-sm-7 col-md-7">
+                    <h4>团队介绍</h4>
+                    <p><span class="we">我们是</span></p>
+                    <p>由足球狂热分子、马拉松跑者、资深记者、高尔夫超级玩家组成，</p>
+                    <p>随时随地为你服务</p>
+                    <p>与你分享最优质最特色的当地旅游体验产品</p>
+                    <p>提供最原汁原味的西班牙旅行体验</p>
+                    <a href="">让我们一起玩转西班牙!</a>
+                  </div>   
+                </div>
           </div>
-          <!-- 团队介绍结束结束 -->
+              <!-- 团队介绍结束结束 -->
 
       <!-- 旅行产品特色 -->
       <div class="feature row">
@@ -416,10 +421,8 @@
           <p>Guangzhou Yatu Information Technology Co., Ltd.
           广州雅途信息科技有限公司
           </p>
-          
         </div>
-      </div>
-      <!-- 简单介绍结束 -->
+       </div> 
 
       <!-- 联系方式 -->
       <div class="contact row">
@@ -451,7 +454,7 @@
     <script src="js/jquery-1.9.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <!--<script src="js/food.js"></script>-->
     <script src="js/tur4u.js"></script>
+
   </body>
 </html>
