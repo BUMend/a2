@@ -433,6 +433,7 @@ a {
 	position: absolute;
 	top: 0;
 	z-index: 0;
+	/*opacity: .99;*/
 	float: left;
 	padding-left: 4%;	
 	width: 100%;
@@ -450,6 +451,50 @@ a {
 	  animation: .25s fadeIn forwards;
 }
 @-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0; /*初始状态 透明度为0*/
+	}
+	50% {
+		opacity: .8; /*中间状态 透明度为0*/
+	}
+	100% {
+		opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0; /*初始状态 透明度为0*/
+	}
+	50% {
+		opacity: .8; /*中间状态 透明度为0*/
+	}
+	100% {
+		opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0; /*初始状态 透明度为0*/
+	}
+	50% {
+		opacity: .8; /*中间状态 透明度为0*/
+	}
+	100% {
+		opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0; /*初始状态 透明度为0*/
+	}
+	50% {
+		opacity: .8; /*中间状态 透明度为0*/
+	}
+	100% {
+		opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+@keyframes fadeIn {
 	0% {
 		opacity: 0; /*初始状态 透明度为0*/
 	}
