@@ -15,7 +15,7 @@ window.onload = function() {
 		});
 
 		$("#about-us").on("click",function() {
-			scrollTo(0,windowHeight+serverHeight);
+			scrollTo(0,windowHeight+serverHeight-66);
 		})
 		$(window).scroll(function () {
 			if($(window).scrollTop()===10){
