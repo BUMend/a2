@@ -1,16 +1,29 @@
 window.onload = function() {
+		
 
 		var windowHeight =  $(window).height();
 		var navHeight = $("#bs-example-navbar-collapse-1").height();
+		var serverHeight = $("#server").height();
 		$("#index").on("click",function(){
 			$(".server-msg").css("margin-top","0px");
 		});
+
 		$("#production").on("click",function(){
 			scrollTo(0,windowHeight-navHeight-35);
 			$(".server-msg").css("margin-top","-35px");
+
 		});
 
-	
+		$("#about-us").on("click",function() {
+			scrollTo(0,windowHeight+serverHeight-66);
+		})
+		$(window).scroll(function () {
+			if($(window).scrollTop()===10){
+				$(".server-msg").css("margin-top","0px");
+			}
+			console.log($(window).scrollTop());	
+		});
+
 		var index = 0;
 		function collHeader() {
 			index ++;
