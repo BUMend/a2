@@ -176,11 +176,11 @@ window.onload = function() {
 			$(".navbar").removeClass("scroll");
 			$(".navbar").removeClass("scrollDeepColor");
 			$(".navbar-brand").css("background","url(img/logo.png) no-repeat");
-			$(".navbar-brand").css("background-size","cover");
+			$(".navbar-brand").css("background-size","100% 100%");
 		}
 		if($(this).scrollTop() > 0) {
 			$(".navbar-brand").css("background","url(img/logo2.png) no-repeat");
-			$(".navbar-brand").css("background-size","cover");
+			$(".navbar-brand").css("background-size","100% 100%");
 		} 
 		if($(this).scrollTop() >= 600) {
 			$(".navbar").removeClass("scroll");
