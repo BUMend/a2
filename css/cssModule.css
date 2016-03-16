@@ -648,6 +648,7 @@ a {
 	border-radius: 20px;
 	color: #fff;
 	font-size: 1.5rem;
+	cursor: default;
 	text-decoration: none;
 }
 .feature p {
@@ -656,6 +657,7 @@ a {
 .feature span {
 	display: block;
 }
+
 /*easy*/
 .easy {
 	margin: 0;
