@@ -23,31 +23,6 @@ window.onload = function() {
 			}
 		});
 
-		var index = 0;
-		function collHeader() {
-			index ++;
-			
-			index == 4 && (index = 1);
-			var path = "img/header" + index + ".jpg";
-
-			var alpha = 0;
-			timer = setTimeout(function() {
-				alpha += 2;
-				alpha > 100 && (alpha = 100);
-				$(".header").css("opacity", alpha / 100);
-				$(".header").css("filter","alpha(opacity = " + alpha + ")");
-				
-				timer = setTimeout(arguments.callee, 20);
-				alpha == 100 && clearTimeout(timer);
-			},20);
-			$(".header").css("background", "url(" + path + ") no-repeat 50% 50%");
-			$(".header").css("background-size", "100% 150%");
-			
-
-			setTimeout(collHeader, 5000);
-		}
-		setTimeout(collHeader, 5000);
-
             var ChangePhoto = function() {
                 $('#ft-sl').height($('#ft-sl').width()*2);                
                 $('#fo-sl').height($('#fo-sl').width()*2);
@@ -177,6 +152,7 @@ window.onload = function() {
 			$(".navbar").removeClass("scrollDeepColor");
 			$(".navbar-brand").css("background","url(img/logo.png) no-repeat");
 			$(".navbar-brand").css("background-size","100% 100%");
+			document.getElementsByClassName('server-msg')[0].style.cssText = "";
 		}
 		if($(this).scrollTop() > 0) {
 			$(".navbar-brand").css("background","url(img/logo2.png) no-repeat");

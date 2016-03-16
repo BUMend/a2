@@ -94,6 +94,7 @@ a {
 	font-weight: 900;
 	background: url(../img/bg.jpg) no-repeat 50% 50%;
 	background-size: 100% 150%;
+	background-attachment: fixed;
 	white-space: nowrap;
 }
 .header h1 {
