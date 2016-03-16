@@ -21,7 +21,6 @@ window.onload = function() {
 			if($(window).scrollTop()===10){
 				$(".server-msg").css("margin-top","0px");
 			}
-			console.log($(window).scrollTop());	
 		});
 
 		var index = 0;
@@ -34,7 +33,6 @@ window.onload = function() {
 			var alpha = 0;
 			timer = setTimeout(function() {
 				alpha += 2;
-				console.log(alpha);
 				alpha > 100 && (alpha = 100);
 				$(".header").css("opacity", alpha / 100);
 				$(".header").css("filter","alpha(opacity = " + alpha + ")");
