@@ -55,8 +55,16 @@ a {
 	font-family: "Microsoft Yahei";
 	border-bottom: 3px solid transparent;
 }
-.navbar-default .navbar-nav>li>a {
+.navbar .navbar-nav>li>a {
 	color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+	border-bottom: 3px solid #fc3e4c;	
+}
+.navbar-default .navbar-nav>li>a:focus {
+	color: #fc3e4c;
+	border-bottom: 3px solid #fc3e4c;
 }
 .navbar-brand {
 	float: left;
@@ -65,10 +73,7 @@ a {
 	background: url(../img/logo.jpg) no-repeat;
 	background-size: cover;
 }
-.navbar .navbar-right a:hover {
-	color: #fc3e2c;
-	border-bottom: 3px solid #fc3e2c;
-}
+
 .scroll {
 	background: #222;
 	opacity: 0.7;
