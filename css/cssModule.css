@@ -61,8 +61,8 @@ a {
 .navbar-brand {
 	float: left;
 	margin: 5px 0;
-	width: 18rem;
-	background: url(../img/logo.jpg) no-repeat;
+	width: 21rem;
+	background: url(../img/logo.png) no-repeat;
 	background-size: cover;
 }
 .navbar .navbar-right a:hover {
@@ -599,11 +599,11 @@ a {
 .team a {
 	display: block;
 	margin-top: 3rem;
-	width: 40%;
+	width: 60%;
 	line-height: 3rem;
 	color: #fff;
 	font-weight: 900;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	text-align: center;
 	background: #f2303e;
 	white-space: nowrap; 
@@ -708,7 +708,7 @@ a {
 .contact {
 	position: relative;
 	padding: 0 19.7%;
-	border-bottom: 1rem solid #000;
+	border-bottom: 2.5rem solid #000;
 	color: #fff;
 	font-size: 1.8rem;
 	font-weight: 100;
@@ -733,9 +733,9 @@ a {
 .copyright {
 	position: absolute;
 	left: 20%;
-	bottom: -25px;
+	bottom: -1.5rem;
 	width: 60%;
-	color: #000;
+	color: #fff;
 	font-size: 1rem;
 	text-align: center;
 	white-space: nowrap;
@@ -746,6 +746,9 @@ a {
 .contact-phone {
 	background: url(../img/con-1.png) no-repeat 10% 50%;
 	background-size: 50px 50px;
+}
+.contact-phone span {
+	display: block;
 }
 .contact-website {
 	background: url(../img/con-2.png) no-repeat 10% 50%;
