@@ -1,6 +1,6 @@
 window.onload = function() {
 		
-
+	// 
 		var windowHeight =  $(window).height();
 		var navHeight = $("#bs-example-navbar-collapse-1").height();
 		var serverHeight = $("#server").height();

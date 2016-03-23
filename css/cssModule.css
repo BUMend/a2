@@ -30,7 +30,7 @@ a {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 	padding: 0;
-	height: 12rem;
+/*	height: 12rem;*/
 }
 .card img {
 	width: 42%;
@@ -69,13 +69,13 @@ a {
 .navbar-brand {
 	float: left;
 	padding: 0;
-	width: 21rem;
+	width: 12.6rem;
 	background: url(../img/logo.png) no-repeat;
 	background-size: 100% 100%;
 }
 .navbar>.container-fluid .navbar-brand {
-	margin: 10px 3rem;
-	height: 40px;
+	margin: 18px 5.5rem;
+	height: 24px;
 }
 .scroll {
 	background: #222;
@@ -113,7 +113,8 @@ a {
 .header span {
 	float: left;
 	margin-top: 1rem;
-	font-size: 2rem;
+	font-size: 2.4rem;
+	font-weight: 100;
 	text-align: center;
 } 
 .header-warp {
@@ -148,19 +149,19 @@ a {
 #tab-list li.active  .fb-tab-btn, #tab-list li.active  .fo-tab-btn ,#tab-list li.active  .fn-tab-btn ,#tab-list li.active  .tf-tab-btn ,#tab-list li.active  .st-tab-btn {
 	color: #fff;
 }
-#tab-list li.active  .fb-tab-btn,#tab-list li.active .fb-tab-btn:hover {
+#tab-list li.active  .fb-tab-btn,#tab-list li .fb-tab-btn:hover {
 	background: #fc3e4c;
 }
-#tab-list li.active  .fo-tab-btn ,#tab-list li.active  .fo-tab-btn:hover {
+#tab-list li.active  .fo-tab-btn ,#tab-list li  .fo-tab-btn:hover {
 	background: #fc3e2c;
 }
-#tab-list li.active  .fn-tab-btn,#tab-list li.active  .fn-tab-btn:hover {
+#tab-list li.active  .fn-tab-btn,#tab-list li  .fn-tab-btn:hover {
 	background: #ffd014;
 }
-#tab-list li.active  .tf-tab-btn ,#tab-list li.active  .tf-tab-btn:hover {
+#tab-list li.active  .tf-tab-btn ,#tab-list li  .tf-tab-btn:hover {
 	background: #37b4fd;
 }
-#tab-list li.active  .st-tab-btn,#tab-list li.active  .st-tab-btn:hover {
+#tab-list li.active  .st-tab-btn,#tab-list li  .st-tab-btn:hover {
 	background: #b59ce5;
 }
 #tab-list li .fb-tab-btn,#tab-list li  .fo-tab-btn,#tab-list li  .fn-tab-btn,#tab-list li  .tf-tab-btn,#tab-list li  .st-tab-btn {
@@ -172,21 +173,6 @@ a {
 	color: #fff;
 }
 
-#tab-list li .fb-tab-btn:hover {
-	background: #fc3e4c;
-}
-#tab-list li  .fo-tab-btn:hover {
-	background: #ffca76;	
-}
-#tab-list li  .fn-tab-btn:hover {
-	background: #ffe57e;	
-}
-#tab-list li  .tf-tab-btn:hover {
-	background: #a4dbff;	
-}
-#tab-list li  .st-tab-btn:hover {
-	background: #decdff;	
-}
 .server-nav .fo-active,.server-nav .fb-active,.server-nav .st-active,.server-nav .fn-active,.server-nav .tf-active{
 	background: #fc3e4c;
 	color: #fff;
@@ -197,10 +183,11 @@ a {
 	display: inline-block;
 
 	line-height: 3rem;
-	color: #b2b2b2;
+	color: #000;
 	background: #fff2eb;
+	font-weight: 100;
 	text-decoration: none;
-	font-size: 1.6rem;
+	font-size: 2.0rem;
 }
 #tab-list li a {
 	padding: 22px  15px; 
@@ -254,7 +241,7 @@ a {
 	display: none;
 }
 #ft-sl .lt {
-	padding: 4rem 4rem 0rem 0rem;
+	padding: 3rem 3rem 0rem 0rem;
 	background: url(../img/qiu.png) 24% 88% #fc3e4c no-repeat;
 	background-size: 56%;
 }
@@ -267,7 +254,7 @@ a {
 	display: none;
 }
 #fo-sl .lt {
-	padding: 4rem 4rem 0rem 0rem;
+	padding: 3rem 3rem 0rem 0rem;
 	background: url(../img/bg-lt.png) 16% 72% #fc3e2c no-repeat;
 	background-size: 39%;
 }
@@ -276,7 +263,7 @@ a {
 	display: none;	
 }
 #tf-sl .lt {
-	padding: 4rem 4rem 0rem 0rem;
+	padding: 3rem 3rem 0rem 0rem;
 	background: url(../img/bg-tf.png)  17% 83% #37b4fd no-repeat;
 	background-size: 44%;
 }
@@ -319,7 +306,7 @@ a {
 	height: 45.28%;
 }
 .st-tr {
-	padding: 4rem 0rem 0rem 4rem;
+	padding: 3rem 0rem 0rem 3rem;
 	text-align: left;
 	line-height: 1.6;
 	background: url(../img/wu.png) 81% 80% #b59ce5 no-repeat;
@@ -366,26 +353,35 @@ a {
 }
 .lt span, .st-tr span {
 	display: block;
-	font-size: 2.4rem;
+	font-size: 2.0rem;
 	font-weight: 100;
 }
 
 /*屏幕*/
 @media all and (max-width: 1440px) {
 	#ft-sl .lt ,#fo-sl .lt ,#tf-lt .lt ,#fun-sl .lt , #tf-sl .lt,.lt {
-		padding: 1rem 1rem 0rem 0rem; 
+		padding: 2rem 2rem 0rem 0rem; 
 	}
 	#fun-sl .lt, .st-tr  {
-		padding: 1rem 0rem 0rem 1rem;
+		padding: 2rem 0rem 0rem 2rem;
 	}
-	#ft-sl .lt span ,#fo-sl .lt span ,#tf-lt .lt span ,#fun-sl .lt span , .lt span,.st-tr span, #tf-sl .lt span {
+	#ft-sl .lt span ,#fo-sl .lt span ,#tf-lt .lt span ,#fun-sl .lt span , .lt span,.st-tr span, #tf-sl .lt span,.server-msg a  {
 		font-size: 1.8rem;
 	}
 	.mask span {
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 	}
 	.feature a {
 		width: 9%;
+	}
+	.contact-phone span,.contact-address span ,.contact .contact-website{
+		font-size: 1.8rem;
+	}
+	.contact li p.address-english {
+		font-size: 1.3rem;
+	}
+	.copyright {
+		left: 50%;
 	}
 }
 /* 小屏幕 */
@@ -393,14 +389,24 @@ a {
 	#ft-sl .lt ,#fo-sl .lt ,#tf-lt .lt ,.lt, #tf-sl .lt  {
 		padding: 1rem 1rem 0rem 0rem; 
 	}
-	#ft-sl .lt span ,#fo-sl .lt span ,#tf-lt .lt span ,#fun-sl .lt span , .st-tr span, .lt span, #tf-sl .lt span {
-		font-size: 1.4rem;
+	#ft-sl .lt span ,#fo-sl .lt span ,#tf-lt .lt span ,#fun-sl .lt span , .st-tr span, .lt span, #tf-sl .lt span,.server-msg a  {
+		font-size: 1.6rem;
 	}
 	#fun-sl .lt , .st-tr {
 		padding:  1rem 0rem 0rem 1rem;
 	}
 	.mask {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
+	}
+	.contact-phone span,.contact-address span ,.contact .contact-website{
+		font-size: 1.8rem;
+	}
+	.contact li p.address-english {
+		font-size: 1.3rem;
+	}
+	span.copyright {
+		left: 48%;
+		font-size: 1.6rem;
 	}
 }
 /* 平板 */
@@ -409,7 +415,7 @@ a {
 		padding: 2rem .6rem 0rem 0rem; 
 		line-height: 1.3;
 	}
-	#ft-sl .lt span ,#fo-sl .lt span ,#tf-lt .lt span ,#fun-sl .lt span ,  .st-tr span,.lt span ,#tf-sl .lt{
+	#ft-sl .lt span ,#fo-sl .lt span ,#tf-lt .lt span ,#fun-sl .lt span ,  .st-tr span,.lt span ,#tf-sl .lt,.server-msg a {
 		font-size: 1.5rem;
 	}
 	#fun-sl .lt, .st-tr {
@@ -418,7 +424,16 @@ a {
 	.mask span {
 		font-size: 1.2rem;
 	}
-	
+	.contact-phone span,.contact-address span ,.contact .contact-website{
+		font-size: 1.8rem;
+	}
+	.contact li p.address-english {
+		font-size: 1.3rem;
+	}
+	span.copyright {
+		left: 40%;
+		font-size: 1.6rem;
+	}
 }
 .lb {
 	height: 50%;
@@ -565,6 +580,72 @@ a {
 }
 .team-msg {
 	float: left;
+	padding: 3rem 0;
+	width: 100%;
+	vertical-align: middle;
+	background:  url(../img/team-til.png) no-repeat 94% 0%,url(../img/team-bg.png) no-repeat;
+	background-size: 6%,100% 95%;
+}
+.team img {
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+}
+.team h4 {
+	color: #fc3e4c;
+	font-size: 2.4rem;
+    	font-weight: 100;
+}
+.team-word {
+	height: 100%;
+	font-size: 1rem;
+    	padding-top: 4rem;
+    	text-align: left;
+    	color: #222;
+}
+.team-word p {
+	margin-top: 2.5rem;
+	font-size: 1.4rem;
+	font-weight: 100;
+	line-height: 1.5;
+}
+.we {
+	font-size: 1.8rem;
+	font-weight: normal;
+}
+.team-word p ~ p {
+	margin: 0;
+}
+.team a {
+	display: block;
+	margin-top: 3rem;
+	width: 60%;
+	line-height: 3rem;
+	color: #fff;
+	font-weight: 900;
+	font-size: 1.5rem;
+	text-align: center;
+	background: #f2303e;
+	white-space: nowrap; 
+}
+.team a:hover, .team a:visited, .team a:link {
+	text-decoration: none;
+	cursor: default;
+}
+@media screen and (max-width: 1800px) {
+	.team a {
+		margin-top: 5rem;
+	}
+}
+/*.team {
+	width: 100%;
+	margin: 0;
+	padding: 9rem 19.7%;
+	padding-bottom: 15rem;
+}
+.team-msg {
+	float: left;
+	padding: 3rem 0;
 	width: 100%;
 	background: url(../img/team-bg.png) no-repeat;
 	background-size: 100% 95%;
@@ -579,11 +660,11 @@ a {
 	margin: 0 auto;
 	margin-bottom: -60px;
 	width: 90%;
-}
-.team-img {
+}*/
+/*.team-img {
 	padding-top: 7em;
-}
-.team-word {
+}*/
+/*.team-word {
 	height: 100%;
 	font-size: 1rem;
     	padding-top: 4rem;
@@ -625,10 +706,10 @@ a {
 	.team a {
 		margin-top: 5rem;
 	}
-}
+}*/
 /*feature 旅行特色板块*/
 .feature {
-	height: 25rem;
+/*	height: 32rem;*/
 	color: #fff;
 	text-align: center;
 	background-color: #f2303e;
@@ -636,7 +717,7 @@ a {
 .feature-msg {
 	float: left;
 	width: 100%;
-	padding: 0 19.7%;
+	padding: 3.2rem 11.7% 2rem 11.7%;
 }
 .feature h1 {
 	padding: 1rem 0;
@@ -651,6 +732,7 @@ a {
 	border-radius: 20px;
 	color: #fff;
 	font-size: 1.5rem;
+	font-weight: bolder;
 	cursor: default;
 	text-decoration: none;
 }
@@ -659,10 +741,15 @@ a {
 }
 .feature span {
 	display: block;
+	font-size: 2.6rem;
 }
-
+.feature .msg-english {
+	margin-top: .8rem;
+	color: #ccc;
+	font-size: 1.8rem;
+}
 /*easy*/
-.easy {
+/*.easy,.contact {
 	margin: 0;
 	padding: 0 19.7%;
 }
@@ -714,9 +801,47 @@ a {
 }
 .easy-title p + p {
 	margin-top: 0;
-}
+}*/
 /*contact 联系方式*/
 .contact {
+	position: relative;
+	padding: 14% 5%;
+	margin: 0;
+	height: 100%;
+	border-bottom: 2.5rem solid #000;
+	color: #000;
+	background: url(../img/contact-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.contact ul {
+	text-align: center;
+}
+.contact ul li {
+	float: left;
+}
+.contact p {
+	margin-top: 3.4rem;
+	font-size: 2rem;
+}
+.contact p span {
+	display: block;
+	line-height: 1.6;
+}
+li .address-english {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+}
+.copyright {
+	position: absolute;
+	left: 58%;
+	bottom: -2rem;
+	width: 30%;
+	color: #ccc;
+	font-size: 1.8rem;
+	text-align: center;
+	white-space: nowrap;
+}
+/*.contact {
 	position: relative;
 	padding: 0 19.7%;
 	border-bottom: 2.5rem solid #000;
@@ -772,4 +897,4 @@ a {
 .contact-address span {
 	display: block;
 	line-height: 1.4;
-}
+}*/
