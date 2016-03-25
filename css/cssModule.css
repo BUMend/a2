@@ -30,7 +30,6 @@ a {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 	padding: 0;
-/*	height: 12rem;*/
 }
 .card img {
 	width: 42%;
@@ -120,7 +119,10 @@ a {
 .header-warp {
 	float: left;
 	width: 100%;
-	padding: 0 30%;
+	padding: 0 20%;
+}
+.ml-18 {
+	margin-left: -1.8rem;
 }
 /*server 旅游产品版块*/
 .server {
@@ -177,8 +179,6 @@ a {
 	background: #fc3e4c;
 	color: #fff;
 }
-
-
 .server-msg a {
 	display: inline-block;
 
@@ -357,8 +357,51 @@ a {
 	font-weight: 100;
 }
 
-/*屏幕*/
+/*大屏幕*/
+@media all and (min-width: 2000px) {
+	.header-warp {
+		padding: 0 20%;
+	}
+	.header-warp span {
+		font-size: 3rem;
+	} 
+	.ml-18 {
+		margin-left: -2.4rem;
+	}
+	.team-img {
+		text-align: center;
+		padding: 2rem 0;
+	}
+	.team .team-img img {
+		width: 72%;
+	}
+	.team .team-word {
+		padding-top: 6rem;
+	}
+	.team .team-word h4 {
+		font-size: 2.9rem;
+	}
+	.team .team-word p {
+		font-size: 2rem;
+		line-height: 1.2;
+	}
+	.team .team-word a {
+		width: 34%;
+		font-size: 2.2rem;
+	}
+	.contact .copyright {
+		left: 64%;
+	}
+
+}
+/*正常屏幕*/
 @media all and (max-width: 1440px) {
+	.header-warp {
+		padding: 0 21%;
+	}
+	.ml-18 {
+		margin-left: -2.2rem;
+	}
 	#ft-sl .lt ,#fo-sl .lt ,#tf-lt .lt ,#fun-sl .lt , #tf-sl .lt,.lt {
 		padding: 2rem 2rem 0rem 0rem; 
 	}
@@ -374,6 +417,7 @@ a {
 	.feature a {
 		width: 9%;
 	}
+
 	.contact-phone span,.contact-address span ,.contact .contact-website{
 		font-size: 1.8rem;
 	}
@@ -386,6 +430,9 @@ a {
 }
 /* 小屏幕 */
 @media all and (max-width: 1024px) {
+	.ml-18 {
+		margin-left: 0;
+	}
 	#ft-sl .lt ,#fo-sl .lt ,#tf-lt .lt ,.lt, #tf-sl .lt  {
 		padding: 1rem 1rem 0rem 0rem; 
 	}
@@ -397,6 +444,26 @@ a {
 	}
 	.mask {
 		font-size: 1.3rem;
+	}
+	.team .team-msg {
+		padding: 3rem 0 4rem 0;
+	}
+	.team-img {
+		padding-top: 3.5rem;
+	}
+	.team .team-word {
+		padding: 3rem 0 0 1.5rem;
+	}
+	.team .team-word h4 {
+		font-size: 2.6rem;
+	}
+	.team .team-word p {
+		font-size: 1.5rem;
+	}
+	.team .team-word a {
+		width: 54%;
+		line-height: 3.4rem;
+		font-size: 1.7rem;
 	}
 	.contact-phone span,.contact-address span ,.contact .contact-website{
 		font-size: 1.8rem;
@@ -423,6 +490,23 @@ a {
 	}
 	.mask span {
 		font-size: 1.2rem;
+	}
+	.team-img {
+		padding-top: 5rem;
+	}
+	.team .team-word {
+		padding: 2rem 0 0 0;
+	}
+	.team .team-word h4 {
+		font-size: 2.4rem;
+	}
+	.team .team-word p {
+		font-size: 1.4rem;
+	}
+	.team .team-word a {
+		width: 62%;
+		font-size: 1.6rem;
+		line-height: 3.2rem;
 	}
 	.contact-phone span,.contact-address span ,.contact .contact-website{
 		font-size: 1.8rem;
@@ -582,134 +666,65 @@ a {
 	float: left;
 	padding: 3rem 0;
 	width: 100%;
-	vertical-align: middle;
 	background:  url(../img/team-til.png) no-repeat 94% 0%,url(../img/team-bg.png) no-repeat;
 	background-size: 6%,100% 95%;
 }
+.team-img {
+
+}
 .team img {
 	display: inline-block;
-	margin: 0 auto;
+	margin: auto;
 	width: 100%;
 }
 .team h4 {
 	color: #fc3e4c;
-	font-size: 2.4rem;
+	font-size: 2.8rem;
     	font-weight: 100;
 }
 .team-word {
 	height: 100%;
 	font-size: 1rem;
-    	padding-top: 4rem;
+    	padding-top: 3rem;
     	text-align: left;
     	color: #222;
 }
 .team-word p {
 	margin-top: 2.5rem;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	font-weight: 100;
-	line-height: 1.5;
+}
+.team-word p span {
+	display: block;
 }
 .we {
 	font-size: 1.8rem;
 	font-weight: normal;
 }
 .team-word p ~ p {
-	margin: 0;
+	margin: 0 0 10px 0;
+	line-height: 1;
 }
 .team a {
 	display: block;
 	margin-top: 3rem;
-	width: 60%;
-	line-height: 3rem;
+	width: 44%;
+	line-height: 4rem;
 	color: #fff;
 	font-weight: 900;
-	font-size: 1.5rem;
-	text-align: center;
-	background: #f2303e;
-	white-space: nowrap; 
-}
-.team a:hover, .team a:visited, .team a:link {
-	text-decoration: none;
-	cursor: default;
-}
-@media screen and (max-width: 1800px) {
-	.team a {
-		margin-top: 5rem;
-	}
-}
-/*.team {
-	width: 100%;
-	margin: 0;
-	padding: 9rem 19.7%;
-	padding-bottom: 15rem;
-}
-.team-msg {
-	float: left;
-	padding: 3rem 0;
-	width: 100%;
-	background: url(../img/team-bg.png) no-repeat;
-	background-size: 100% 95%;
-}
-.team h4 {
-	color: #fc3e4c;
-	font-size: 2.4rem;
-    	font-weight: 100;
-}
-.team img {
-	display: block;
-	margin: 0 auto;
-	margin-bottom: -60px;
-	width: 90%;
-}*/
-/*.team-img {
-	padding-top: 7em;
-}*/
-/*.team-word {
-	height: 100%;
-	font-size: 1rem;
-    	padding-top: 4rem;
-    	text-align: left;
-    	color: #222;
-	background: url(../img/team-til.png) no-repeat 90% 0%;
-	background-size: 10%;
-}
-.team-word p {
-	margin-top: 2.5rem;
-	font-size: 1.4rem;
-	font-weight: 100;
-	line-height: 1.5;
-}
-.we {
 	font-size: 1.8rem;
-	font-weight: normal;
-}
-.team-word p ~ p {
-	margin: 0;
-}
-.team a {
-	display: block;
-	margin-top: 3rem;
-	width: 60%;
-	line-height: 3rem;
-	color: #fff;
-	font-weight: 900;
-	font-size: 1.5rem;
+	font-style: italic;
 	text-align: center;
 	background: #f2303e;
-	white-space: nowrap; 
+	white-space: nowrap;
 }
 .team a:hover, .team a:visited, .team a:link {
 	text-decoration: none;
 	cursor: default;
 }
-@media screen and (max-width: 1800px) {
-	.team a {
-		margin-top: 5rem;
-	}
-}*/
+
 /*feature 旅行特色板块*/
 .feature {
-/*	height: 32rem;*/
 	color: #fff;
 	text-align: center;
 	background-color: #f2303e;
@@ -748,60 +763,6 @@ a {
 	color: #ccc;
 	font-size: 1.8rem;
 }
-/*easy*/
-/*.easy,.contact {
-	margin: 0;
-	padding: 0 19.7%;
-}
-.easy-msg {
-	float: left;
-	margin-top: 10rem;
-	margin-bottom: 10rem;
-	width: 100%;
-	background: url(../img/team-bg.png) no-repeat;
-	background-size: 100% 100%;
-}
-.easy-word {
-	height: 100%;
-	font-size: 1.5rem;
-    	padding-top: 3.5rem;
-    	text-align: right;
-    	color: #222;
-	background: url(../img/team-til.png) no-repeat 5% 0%;
-	background-size: 10%;
-}
-.easy-word p {
-	font-size: 2rem;
-	margin-top: 3rem;
-}
-.easy-word p + p {
-	margin: 0;
-}
-.easy-man {
-	margin-bottom: -2rem;
-}
-.easy-man img {
-	width: 85%;
-}
-.easy-title {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	color: #fff;
-	background: #000;
-}
-.easy-title img {
-	width: 40%;
-}
-.easy-title p {
-	float: right;
-	margin-top: 2rem;
-	padding-left: 2rem;
-	width: 100%;
-	font-size: 1.8rem;
-}
-.easy-title p + p {
-	margin-top: 0;
-}*/
 /*contact 联系方式*/
 .contact {
 	position: relative;
@@ -841,60 +802,3 @@ li .address-english {
 	text-align: center;
 	white-space: nowrap;
 }
-/*.contact {
-	position: relative;
-	padding: 0 19.7%;
-	border-bottom: 2.5rem solid #000;
-	color: #fff;
-	font-size: 1.8rem;
-	font-weight: 100;
-	background: url(../img/contact-bg.jpg) no-repeat;
-	background-size: cover;
-	text-align: right;
-}
-.contact ul {
-	padding-left: 0;
-	background: #222;
-}
-.contact li {
-	border-bottom: 1px solid #313131;
-}
-.contact p {
-	margin: 0;
-	padding: 4rem 0 4rem 12rem;
-	border-left: 5px solid transparent;
-	text-align: left;
-	white-space: break-word;
-}
-.copyright {
-	position: absolute;
-	left: 20%;
-	bottom: -1.5rem;
-	width: 60%;
-	color: #fff;
-	font-size: 1rem;
-	text-align: center;
-	white-space: nowrap;
-}
-.contact p:hover {
-	border-left: 5px solid #fc3e4c;
-}
-.contact-phone {
-	background: url(../img/con-1.png) no-repeat 10% 50%;
-	background-size: 50px 50px;
-}
-.contact-phone span {
-	display: block;
-}
-.contact-website {
-	background: url(../img/con-2.png) no-repeat 10% 50%;
-	background-size: 50px 50px;
-}
-.contact-address {
-	background: url(../img/con-3.png) no-repeat 10% 20%;
-	background-size: 50px 50px;
-}
-.contact-address span {
-	display: block;
-	line-height: 1.4;
-}*/

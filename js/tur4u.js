@@ -1,124 +1,91 @@
 window.onload = function() {
 		
-	// 
-		var windowHeight =  $(window).height();
-		var navHeight = $("#bs-example-navbar-collapse-1").height();
-		var serverHeight = $("#server").height();
-		$("#index").on("click",function(){
+	//产品导航栏往上移与往下移
+	var windowHeight =  $(window).height(),navHeight = $("#bs-example-navbar-collapse-1").height(),serverHeight = $("#server").height();
+	$("#index").on("click",function(){
+		$(".server-msg").css("margin-top","0px");
+	});
+
+	$("#production").on("click",function(){
+		scrollTo(0,windowHeight-navHeight-35);
+		$(".server-msg").css("margin-top","-35px");
+
+	});
+
+	$("#about-us").on("click",function() {
+		scrollTo(0,windowHeight+serverHeight-66);
+		console.log($(window).scrollTop());
+	})
+	$(window).on("scroll",function () {
+		console.log($(window).scrollTop());
+		if($(window).scrollTop()<200||$(window).scrollTop()===200){
 			$(".server-msg").css("margin-top","0px");
-		});
-
-		$("#production").on("click",function(){
-			scrollTo(0,windowHeight-navHeight-35);
+		}
+		if($(window).scrollTop()>200) {
 			$(".server-msg").css("margin-top","-35px");
+		}
 
-		});
-
-		$("#about-us").on("click",function() {
-			scrollTo(0,windowHeight+serverHeight-66);
-		})
-		$(window).scroll(function () {
-			if($(window).scrollTop()===10){
-				$(".server-msg").css("margin-top","0px");
-			}
-		});
-
-            var ChangePhoto = function() {
-                $('#ft-sl').height($('#ft-sl').width()*2);                
-                $('#fo-sl').height($('#fo-sl').width()*2);
-                $('#tf-sl').height($('#tf-sl').width()*2);
-                $('#fun-sl').height($('#fun-sl').width()*2);       
-                $('#st-sl').height($('#st-sl').width()/0.648);  
-                $('#ft-sr').height($('#ft-sl').height());
-                $('#fo-sr').height($('#fo-sl').height());
-                $('#tf-sr').height($('#tf-sl').height());
-                $('#fun-sr').height($('#fun-sl').height());
-                $('#st-sr').height($('#st-sl').height());
-                $('#st-ct').height($('#st-sl').height());
+	});
+	//产品系列图片排布 
+            	var ChangePhoto = function() {
+		$('#ft-sl').height($('#ft-sl').width()*2);                
+		$('#fo-sl').height($('#fo-sl').width()*2);
+		$('#tf-sl').height($('#tf-sl').width()*2);
+		$('#fun-sl').height($('#fun-sl').width()*2);       
+		$('#st-sl').height($('#st-sl').width()/0.648);  
+		$('#ft-sr').height($('#ft-sl').height());
+		$('#fo-sr').height($('#fo-sl').height());
+		$('#tf-sr').height($('#tf-sl').height());
+		$('#fun-sr').height($('#fun-sl').height());
+		$('#st-sr').height($('#st-sl').height());
+		$('#st-ct').height($('#st-sl').height());
             }
             ChangePhoto();
             $(window).on('resize',function() {
-                ChangePhoto();
+              		ChangePhoto();
             });
             $('#tab-list a').on("click",function (e) { 
-	  e.preventDefault();
-	  $(this).tab("show");
-	  ChangePhoto();
-	  if($("#football-tab").css("display")==="block"){
-	  	$(".server").css("background","url(img/zq.jpg) no-repeat");
-	  	$(".server").css("background-size","cover")
-	  	$("#triangle-fb").css("display","block");
-	  	console.log($("#triangle-fb").css("display"));
-	  }else{
-	  	$("#triangle-fb").css("display","none");
-	  }	  	
-	  if($("#food-tab").css("display")==="block"){
-	  	$(".server").css("background","url(img/foodbg.jpg) no-repeat");
-	  	$(".server").css("background-size","cover")
-	  	$("#triangle-fo").css("display","block");
-	  }else{
-	  	$("#triangle-fo").css("display","none");
-	  }	
-	  if($("#fun-tab").css("display")==="block"){
-	  	$(".server").css("background","url(img/bg-fun.jpg) no-repeat");
-	  	$(".server").css("background-size","cover")
-	  	$("#triangle-fn").css("display","block");
-	  }else{
-	  	$("#triangle-fn").css("display","none");
-	  }	
-	  if($("#traffic-tab").css("display")==="block"){
-	  	$(".server").css("background","url(img/tf-bg.jpg) no-repeat");
-	  	$(".server").css("background-size","cover")
-	  	$("#triangle-tf").css("display","block");
-	  }else{
-	  	$("#triangle-tf").css("display","none");
-	  }	
-	  if($("#stay-tab").css("display")==="block"){
-	  	$(".server").css("background","url(img/bg-st.jpg) no-repeat");
-	  	$(".server").css("background-size","cover")
-	  	$("#triangle-st").css("display","block");
-	  }else{
-	  	$("#triangle-st").css("display","none");
-	  }	
+		e.preventDefault();
+		$(this).tab("show");
+		ChangePhoto();
+		if($("#football-tab").css("display")==="block"){
+			$(".server").css("background","url(img/zq.jpg) no-repeat");
+			$(".server").css("background-size","cover")
+			$("#triangle-fb").css("display","block");
+			console.log($("#triangle-fb").css("display"));
+		}else{
+			$("#triangle-fb").css("display","none");
+		}	  	
+		if($("#food-tab").css("display")==="block"){
+			$(".server").css("background","url(img/foodbg.jpg) no-repeat");
+			$(".server").css("background-size","cover")
+			$("#triangle-fo").css("display","block");
+		}else{
+			$("#triangle-fo").css("display","none");
+		}	
+		if($("#fun-tab").css("display")==="block"){
+			$(".server").css("background","url(img/bg-fun.jpg) no-repeat");
+			$(".server").css("background-size","cover")
+			$("#triangle-fn").css("display","block");
+		}else{
+			$("#triangle-fn").css("display","none");
+		}	
+		if($("#traffic-tab").css("display")==="block"){
+			$(".server").css("background","url(img/tf-bg.jpg) no-repeat");
+			$(".server").css("background-size","cover")
+			$("#triangle-tf").css("display","block");
+		}else{
+			$("#triangle-tf").css("display","none");
+		}	
+		if($("#stay-tab").css("display")==="block"){
+			$(".server").css("background","url(img/bg-st.jpg) no-repeat");
+			$(".server").css("background-size","cover")
+			$("#triangle-st").css("display","block");
+		}else{
+			$("#triangle-st").css("display","none");
+		}	
              }) ;
-
-	var control = 0;
-	$(window).scroll(function(){
-		height = $(window).height();
-		trigger = document.getElementById('trigger').getBoundingClientRect().top < (height*2/3);
-		if(trigger&&control == 0){
-			$('.special img').animate({
-				top: '0'		
-			},1000);
-			$('.special img').css({
-				transform : "rotateY(10deg)",
-				opacity : 1,
-				transition : "transform 2s,opacity 1s"
-			})			
-			jQuery.fn.shake = function(intShakes /*Amount of shakes*/, intDistance /*Shake distance*/, intDuration /*Time duration*/) {
-			    this.each(function() {
-			        var jqNode = $(this);
-			        jqNode.css({position: 'relative'});
-			        for (var x=1; x<=intShakes; x++) {
-			            jqNode.animate({ top: (intDistance * -1) },(((intDuration / intShakes) / 4)))
-			            //.animate({ top: intDistance },((intDuration/intShakes)/2))
-			            .animate({ top: 0 },(((intDuration/intShakes)/4)));
-			        }
-			    });
-			    return this;
-			}	
-			$('.special img').shake(1,12,1000);
-			control = 1;
-		}
-		if(document.getElementById('trigger').getBoundingClientRect().top>=1.2*height){
-			$('.special img').css({
-				opacity : 0,
-				top : "-170px",
-				transform : "rotateY(80deg)"
-			})				
-			control = 0;
-		}
-	})
+	// 产品图片上的遮罩
 	$('.lb, .rt , .rtl, .rtr, #st-sl, .st-br, .st-tr, .st-bl,.st-tl').mouseover(function() {
 		$(this).find('img').css({
 			zIndex : 2,
@@ -142,8 +109,6 @@ window.onload = function() {
 			zIndex : 0
 		});	
 	})
-}
-
 	//导航栏
 	$(window.document).scroll(function() {
 		$(".navbar").addClass("scroll");
@@ -163,5 +128,6 @@ window.onload = function() {
 			$(".navbar").addClass("scrollDeepColor");
 		}
 	});       
+}	
 
 
