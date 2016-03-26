@@ -1,5 +1,33 @@
 window.onload = function() {
-		
+	
+	//轮播图 
+	var index = 0, timer = null;
+	function show(index) {
+		var alpha = 0;
+		clearInterval(timer);
+
+		for(i = 0; i < $(".header img").length; i++) {
+			$(".header img")[i].style.opacity = 0;
+			$(".header img")[i].style.filter = "alpha(opacity=0)";
+		}
+
+		timer = setInterval(function() {
+			alpha += 2;
+			alpha > 100 && (alpha = 100);
+			$(".header img")[index].style.opacity = alpha / 100;
+			$(".header img")[index].style.filter = "alpha(opacity = " + alpha + ")";
+			alpha == 100 && clearInterval(timer);
+		},20);
+	}
+
+	function autoPlay() {
+		show(index);
+		index++;
+		(index == 3) && (index = 0);
+		setTimeout(autoPlay,5000);
+	}
+	autoPlay();
+
 	//产品导航栏往上移与往下移
 	var windowHeight =  $(window).height(),navHeight = $("#bs-example-navbar-collapse-1").height(),serverHeight = $("#server").height();
 	$("#index").on("click",function(){

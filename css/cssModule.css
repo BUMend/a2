@@ -90,16 +90,21 @@ a {
 /*header 标题页*/
 .header {
 	position: relative;
-	/*width: 100%;*/
+	width: 100%;
 	height: 100%;
 	color: #fff;
 	font-weight: 900;
-	background: url(../img/bg.jpg) no-repeat 50% 50%;
-	background-size: 100% 150%;
-	background-attachment: fixed;
+	background: #ccc;
 	white-space: nowrap;
+	overflow: hidden;
+}
+.header img {
+	position: absolute;
+	width: 100%;
+	height: 150%;
 }
 .header h1 {
+	position: relative;
 	margin: 5rem auto;
 	margin-top: 15rem;
 	width: 50%;
@@ -108,6 +113,7 @@ a {
 	background: url(../img/h1.png) no-repeat 0% 50%;
 	background-size: 100% 100%;
 	text-align: center;
+	z-index: 2;
 }
 .header span {
 	float: left;
