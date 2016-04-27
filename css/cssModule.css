@@ -779,6 +779,7 @@ a {
 	color: #000;
 	background: url(../img/contact-bg.jpg) no-repeat;
 	background-size: 100% 100%;
+	text-align: center;
 }
 .contact ul {
 	text-align: center;
@@ -800,9 +801,8 @@ li .address-english {
 }
 .copyright {
 	position: absolute;
-	left: 58%;
+	transform: translateX(-50%);
 	bottom: -2rem;
-	width: 30%;
 	color: #ccc;
 	font-size: 1.8rem;
 	text-align: center;

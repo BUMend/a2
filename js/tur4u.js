@@ -45,7 +45,7 @@ window.onload = function() {
 		console.log($(window).scrollTop());
 	})
 	$(window).on("scroll",function () {
-		console.log($(window).scrollTop());
+		// console.log($(window).scrollTop());
 		if($(window).scrollTop()<200||$(window).scrollTop()===200){
 			$(".server-msg").css("margin-top","0px");
 		}
