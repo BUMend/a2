@@ -801,6 +801,10 @@ li .address-english {
 }
 .copyright {
 	position: absolute;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
 	bottom: -2rem;
 	color: #ccc;
